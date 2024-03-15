@@ -1,0 +1,1860 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="keywords" content="彩票技术交流圈">
+<meta name="description" content="彩票技术交流圈">
+<meta name="theme-color" content="#000">
+<title>彩票技术交流圈</title>
+<link rel="shortcut icon" href="/favicon.ico?v=1710520342772">
+<link rel="stylesheet" href="/styles/main.css">
+<link rel="stylesheet" href="/media/css/gemini.css">
+
+<link rel="stylesheet" href="/media/fonts/font-awesome.css">
+<link
+  href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Rosario:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext"
+  rel="stylesheet" type="text/css">
+
+<link href="/media/hljs/styles/androidstudio.css"
+  rel="stylesheet">
+
+<script src="/media/hljs/highlight.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.ui.min.js"></script>
+
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+
+</head>
+
+<body>
+  <div class="head-top-line"></div>
+  <div class="header-box">
+    
+<div class="gemini">
+  <header class="header  ">
+    <div class="blog-header box-shadow-wrapper bg-color " id="header">
+      <div class="nav-toggle" id="nav_toggle">
+        <div class="toggle-box">
+          <div class="line line-top"></div>
+          <div class="line line-center"></div>
+          <div class="line line-bottom"></div>
+        </div>
+      </div>
+      <div class="site-meta">       
+        <div class="site-title">
+          
+            <a href="/" class="brand">
+              <span>彩票技术交流圈</span>
+            </a>  
+          
+        </div>
+        
+          <p class="subtitle">彩票技术交流圈</p>
+        
+      </div>
+      <nav class="site-nav" id="site_nav">
+        <ul id="nav_ul">
+          
+            
+            
+              
+            
+            <li class="nav-item nav-item-active">
+              
+              
+                <a href="/" target="_self">
+                  <i class="fa fa-home"></i> 首页
+                </a>
+              
+            </li>
+          
+            
+            
+              
+            
+            <li class="nav-item ">
+              
+              
+                <a href="/archives/" target="_self">
+                  <i class="fa fa-archive"></i> 归档
+                </a>
+              
+            </li>
+          
+            
+            
+              
+            
+            <li class="nav-item ">
+              
+              
+                <a href="https://feng888777.github.io/tags/" target="_self">
+                  <i class="fa fa-globe"></i> 标签
+                </a>
+              
+            </li>
+          
+            
+            
+              
+            
+            <li class="nav-item ">
+              
+              
+                <a href="/post/about/" target="_self">
+                  <i class="fa fa-user"></i> 关于
+                </a>
+              
+            </li>
+          
+          
+            
+              <li class="nav-item ">
+                <a href="/friends/" target="_self">
+                  
+                    <i class="fa fa-address-book"></i> 友情链接
+                  
+                </a>
+              </li>
+            
+          
+        </ul>
+      </nav>
+    </div>
+  </header>
+</div>
+
+<script type="text/javascript"> 
+ 
+  let showNav = true;
+
+  let navToggle = document.querySelector('#nav_toggle'),
+  siteNav = document.querySelector('#site_nav');
+  
+  function navClick() {
+    let sideBar = document.querySelector('.sidebar');
+    let navUl = document.querySelector('#nav_ul');
+    navToggle.classList.toggle('nav-toggle-active');
+    siteNav.classList.toggle('nav-menu-active');
+    if (siteNav.classList.contains('nav-menu-active')) {
+      siteNav.style = "height: " + (navUl.children.length * 42) +"px !important";
+    } else {
+      siteNav.style = "";
+    }
+  }
+
+  navToggle.addEventListener('click',navClick);  
+</script>
+  </div>
+  <div class="main-continer">
+    
+    <div
+      class="section-layout gemini ">
+      <div class="section-layout-wrapper">
+        <div id="sidebarMeta" class="sidebar">
+    
+<div class="sidebar-wrapper box-shadow-wrapper bg-color">
+  <div class="sidebar-item">
+    <img class="site-author-image right-motion" src="/images/avatar.png"/>
+    <p class="site-author-name">九帝</p>
+    
+    <div class="site-description right-motion">
+      
+      
+      
+        <p>九帝联系方式   防失联，务必添加   </p>
+      
+        <p> skype：d9516888@outlook.com  </p>
+      
+        <p> letstalk：d9516888@outlook.com   </p>
+      
+        <p> skype：防失联与业务咨询  </p>
+      
+        <p> letstalk：业务执行圈子技术交流群   </p>
+      
+        <p> skype官网：shiguangpu.com  </p>
+      
+        <p> letstalk官网：letstalk.net</p>
+      
+      
+    </div>
+    
+  </div>
+  <div class="sidebar-item side-item-stat right-motion">
+    <div class="sidebar-item-box">
+      <a href="/archives/">
+        
+        <span class="site-item-stat-count">19</span>
+        <span class="site-item-stat-name">文章</span>
+      </a>
+    </div>
+    <div class="sidebar-item-box">
+      <a href="">
+        <span class="site-item-stat-count">2</span>
+        <span class="site-item-stat-name">分类</span>
+      </a>
+    </div>
+    <div class="sidebar-item-box">
+      <a href="/tags/">
+        <span class="site-item-stat-count">2</span>
+        <span class="site-item-stat-name">标签</span>
+      </a>
+    </div>
+  </div>
+  
+    
+      <div class="sidebar-item">
+        <span class="site-item-rss">
+            <i class="fa fa-rss"></i>
+            <a href="https://feng888777.github.io/atom.xml" target="_blank">RSS</a>
+        </span>
+      </div>
+    
+  
+  
+
+
+</div>
+</div>
+<script>
+  let sidebarMeta = document.querySelector('#sidebarMeta');
+  let scheme = 'gemini';
+  let sidebarWrapper = document.querySelector('.sidebar-wrapper');
+  if (sidebarMeta && (scheme === 'pisces' || scheme === 'gemini')) {
+    document.addEventListener('scroll', function(e) {
+      if (document.scrollingElement.scrollTop > parseInt(sidebarMeta.style.marginTop) + 10) {
+        sidebarWrapper.classList.add('home-sidebar-fixed')
+      } else {
+        sidebarWrapper.classList.remove('home-sidebar-fixed')
+      }
+    });
+  }
+  </script>
+        <div class="section-box gemini">
+          <section class="section  posts-expand slide-down-in">
+            
+  <article class="post-list-box  post box-shadow-wrapper">
+    <div class="article-wrapper bg-color">
+      <header class="post-header">
+  <h1 class="post-title">
+    <a class="post-title-link" href="https://feng888777.github.io/post/cai-piao-suo-shui-zuo-hao-ruan-jian/">
+      彩票缩水做号软件
+    </a>
+  </h1>
+  <div class="post-meta">
+    
+    <span class="meta-item">
+      <i class="fa fa-thumb-tack"></i>
+      <span>置顶</span>
+      <span class="post-meta-divider">|</span>
+    </span>
+    
+    <span class="meta-item pc-show">
+      <i class="fa fa-calendar-o"></i>
+      <span>发布于</span>
+      <span>2024-02-27</span>
+      <span class="post-meta-divider pc-show">|</span>
+    </span>
+    
+    <span class="meta-item">
+      <i class="fa fa-folder-o"></i>
+      <span class="pc-show">分类于</span>
+      
+      
+      <a href="https://feng888777.github.io/tag/F0BcWj6Lq/">
+        <span>彩票缩水做号软件</span>
+      </a>
+      
+      
+    </span>
+    <span class="post-meta-divider">|</span>
+    
+    <span class="meta-item">
+      <i class="fa fa-clock-o"></i>
+      <span>1分钟</span>
+    </span>
+    <span class="meta-item">
+      <span class="post-meta-divider">|</span>
+      <i class="fa fa-file-word-o"></i>
+      <span>81<span class="pc-show">字数</span></span>
+    </span>
+    
+  </div>
+</header>
+      <div class="post-body">
+        
+        
+          
+        
+        
+        <div class="post-button text-center">
+          <a class="btn" href="https://feng888777.github.io/post/cai-piao-suo-shui-zuo-hao-ruan-jian/" rel="contents">
+            阅读全文 »
+          </a>
+        </div>
+        
+      </div>
+      
+    </div>
+  </article>
+
+  <article class="post-list-box  post box-shadow-wrapper">
+    <div class="article-wrapper bg-color">
+      <header class="post-header">
+  <h1 class="post-title">
+    <a class="post-title-link" href="https://feng888777.github.io/post/cai-piao-ji-zhu-sha-hao-huan-jiang-sha-hao-yi-lou-k-fu-zhu-sha-hao/">
+      彩票技术，杀号，还讲杀号。遗漏K辅助杀号。
+    </a>
+  </h1>
+  <div class="post-meta">
+    
+    <span class="meta-item pc-show">
+      <i class="fa fa-calendar-o"></i>
+      <span>发布于</span>
+      <span>2024-03-16</span>
+      <span class="post-meta-divider pc-show">|</span>
+    </span>
+    
+    <span class="meta-item">
+      <i class="fa fa-folder-o"></i>
+      <span class="pc-show">分类于</span>
+      
+      
+      <a href="https://feng888777.github.io/tag/ELWsBxdqW/">
+        <span>彩票技术</span>
+      </a>
+      
+      
+    </span>
+    <span class="post-meta-divider">|</span>
+    
+    <span class="meta-item">
+      <i class="fa fa-clock-o"></i>
+      <span>2分钟</span>
+    </span>
+    <span class="meta-item">
+      <span class="post-meta-divider">|</span>
+      <i class="fa fa-file-word-o"></i>
+      <span>313<span class="pc-show">字数</span></span>
+    </span>
+    
+  </div>
+</header>
+      <div class="post-body">
+        
+        
+          
+        
+        
+        <div class="post-button text-center">
+          <a class="btn" href="https://feng888777.github.io/post/cai-piao-ji-zhu-sha-hao-huan-jiang-sha-hao-yi-lou-k-fu-zhu-sha-hao/" rel="contents">
+            阅读全文 »
+          </a>
+        </div>
+        
+      </div>
+      
+    </div>
+  </article>
+
+  <article class="post-list-box  post box-shadow-wrapper">
+    <div class="article-wrapper bg-color">
+      <header class="post-header">
+  <h1 class="post-title">
+    <a class="post-title-link" href="https://feng888777.github.io/post/cai-piao-ji-zhu-sha-hao-zai-jiang-zhi-biao-sha-hao/">
+      彩票技术，杀号，再讲指标杀号。
+    </a>
+  </h1>
+  <div class="post-meta">
+    
+    <span class="meta-item pc-show">
+      <i class="fa fa-calendar-o"></i>
+      <span>发布于</span>
+      <span>2024-03-14</span>
+      <span class="post-meta-divider pc-show">|</span>
+    </span>
+    
+    <span class="meta-item">
+      <i class="fa fa-clock-o"></i>
+      <span>1分钟</span>
+    </span>
+    <span class="meta-item">
+      <span class="post-meta-divider">|</span>
+      <i class="fa fa-file-word-o"></i>
+      <span>202<span class="pc-show">字数</span></span>
+    </span>
+    
+  </div>
+</header>
+      <div class="post-body">
+        
+        
+          
+        
+        
+        <div class="post-button text-center">
+          <a class="btn" href="https://feng888777.github.io/post/cai-piao-ji-zhu-sha-hao-zai-jiang-zhi-biao-sha-hao/" rel="contents">
+            阅读全文 »
+          </a>
+        </div>
+        
+      </div>
+      
+    </div>
+  </article>
+
+  <article class="post-list-box  post box-shadow-wrapper">
+    <div class="article-wrapper bg-color">
+      <header class="post-header">
+  <h1 class="post-title">
+    <a class="post-title-link" href="https://feng888777.github.io/post/cai-piao-ji-zhu-shou-ji-ban-cai-piao-suo-shui-zuo-hao-ruan-jian/">
+      彩票技术，手机版彩票缩水做号软件。
+    </a>
+  </h1>
+  <div class="post-meta">
+    
+    <span class="meta-item pc-show">
+      <i class="fa fa-calendar-o"></i>
+      <span>发布于</span>
+      <span>2024-03-14</span>
+      <span class="post-meta-divider pc-show">|</span>
+    </span>
+    
+    <span class="meta-item">
+      <i class="fa fa-folder-o"></i>
+      <span class="pc-show">分类于</span>
+      
+      
+      <a href="https://feng888777.github.io/tag/F0BcWj6Lq/">
+        <span>彩票缩水做号软件</span>
+      </a>
+      
+      
+    </span>
+    <span class="post-meta-divider">|</span>
+    
+    <span class="meta-item">
+      <i class="fa fa-clock-o"></i>
+      <span>1分钟</span>
+    </span>
+    <span class="meta-item">
+      <span class="post-meta-divider">|</span>
+      <i class="fa fa-file-word-o"></i>
+      <span>177<span class="pc-show">字数</span></span>
+    </span>
+    
+  </div>
+</header>
+      <div class="post-body">
+        
+        
+          
+        
+        
+        <div class="post-button text-center">
+          <a class="btn" href="https://feng888777.github.io/post/cai-piao-ji-zhu-shou-ji-ban-cai-piao-suo-shui-zuo-hao-ruan-jian/" rel="contents">
+            阅读全文 »
+          </a>
+        </div>
+        
+      </div>
+      
+    </div>
+  </article>
+
+  <article class="post-list-box  post box-shadow-wrapper">
+    <div class="article-wrapper bg-color">
+      <header class="post-header">
+  <h1 class="post-title">
+    <a class="post-title-link" href="https://feng888777.github.io/post/cai-piao-ji-zhu-wan-fa-fen-xiang-pin-jie-wan-fa/">
+      彩票技术，玩法分享，拼接玩法
+    </a>
+  </h1>
+  <div class="post-meta">
+    
+    <span class="meta-item pc-show">
+      <i class="fa fa-calendar-o"></i>
+      <span>发布于</span>
+      <span>2024-03-13</span>
+      <span class="post-meta-divider pc-show">|</span>
+    </span>
+    
+    <span class="meta-item">
+      <i class="fa fa-clock-o"></i>
+      <span>1分钟</span>
+    </span>
+    <span class="meta-item">
+      <span class="post-meta-divider">|</span>
+      <i class="fa fa-file-word-o"></i>
+      <span>196<span class="pc-show">字数</span></span>
+    </span>
+    
+  </div>
+</header>
+      <div class="post-body">
+        
+        
+          
+        
+        
+        <div class="post-button text-center">
+          <a class="btn" href="https://feng888777.github.io/post/cai-piao-ji-zhu-wan-fa-fen-xiang-pin-jie-wan-fa/" rel="contents">
+            阅读全文 »
+          </a>
+        </div>
+        
+      </div>
+      
+    </div>
+  </article>
+
+  <article class="post-list-box  post box-shadow-wrapper">
+    <div class="article-wrapper bg-color">
+      <header class="post-header">
+  <h1 class="post-title">
+    <a class="post-title-link" href="https://feng888777.github.io/post/cai-piao-ji-zhu-qi-miao-qu-shi-fen-xi-qu-shi-bian-su-xian/">
+      彩票技术，奇妙趋势分析，趋势变速线
+    </a>
+  </h1>
+  <div class="post-meta">
+    
+    <span class="meta-item pc-show">
+      <i class="fa fa-calendar-o"></i>
+      <span>发布于</span>
+      <span>2024-03-11</span>
+      <span class="post-meta-divider pc-show">|</span>
+    </span>
+    
+    <span class="meta-item">
+      <i class="fa fa-folder-o"></i>
+      <span class="pc-show">分类于</span>
+      
+      
+      <a href="https://feng888777.github.io/tag/ELWsBxdqW/">
+        <span>彩票技术</span>
+      </a>
+      
+      
+    </span>
+    <span class="post-meta-divider">|</span>
+    
+    <span class="meta-item">
+      <i class="fa fa-clock-o"></i>
+      <span>2分钟</span>
+    </span>
+    <span class="meta-item">
+      <span class="post-meta-divider">|</span>
+      <i class="fa fa-file-word-o"></i>
+      <span>385<span class="pc-show">字数</span></span>
+    </span>
+    
+  </div>
+</header>
+      <div class="post-body">
+        
+        
+          
+        
+        
+        <div class="post-button text-center">
+          <a class="btn" href="https://feng888777.github.io/post/cai-piao-ji-zhu-qi-miao-qu-shi-fen-xi-qu-shi-bian-su-xian/" rel="contents">
+            阅读全文 »
+          </a>
+        </div>
+        
+      </div>
+      
+    </div>
+  </article>
+
+  <article class="post-list-box  post box-shadow-wrapper">
+    <div class="article-wrapper bg-color">
+      <header class="post-header">
+  <h1 class="post-title">
+    <a class="post-title-link" href="https://feng888777.github.io/post/cai-piao-ji-zhu-qian-tan-qu-shi-qu-shi-de-zhen-dang-yu-ya-suo/">
+      彩票技术，浅谈趋势，趋势的震荡与压缩。
+    </a>
+  </h1>
+  <div class="post-meta">
+    
+    <span class="meta-item pc-show">
+      <i class="fa fa-calendar-o"></i>
+      <span>发布于</span>
+      <span>2024-03-11</span>
+      <span class="post-meta-divider pc-show">|</span>
+    </span>
+    
+    <span class="meta-item">
+      <i class="fa fa-folder-o"></i>
+      <span class="pc-show">分类于</span>
+      
+      
+      <a href="https://feng888777.github.io/tag/ELWsBxdqW/">
+        <span>彩票技术</span>
+      </a>
+      
+      
+    </span>
+    <span class="post-meta-divider">|</span>
+    
+    <span class="meta-item">
+      <i class="fa fa-clock-o"></i>
+      <span>1分钟</span>
+    </span>
+    <span class="meta-item">
+      <span class="post-meta-divider">|</span>
+      <i class="fa fa-file-word-o"></i>
+      <span>228<span class="pc-show">字数</span></span>
+    </span>
+    
+  </div>
+</header>
+      <div class="post-body">
+        
+        
+          
+        
+        
+        <div class="post-button text-center">
+          <a class="btn" href="https://feng888777.github.io/post/cai-piao-ji-zhu-qian-tan-qu-shi-qu-shi-de-zhen-dang-yu-ya-suo/" rel="contents">
+            阅读全文 »
+          </a>
+        </div>
+        
+      </div>
+      
+    </div>
+  </article>
+
+  <article class="post-list-box  post box-shadow-wrapper">
+    <div class="article-wrapper bg-color">
+      <header class="post-header">
+  <h1 class="post-title">
+    <a class="post-title-link" href="https://feng888777.github.io/post/cai-piao-ji-zhu-ruan-jian-shi-yong-yi-lou-sou-suo/">
+      彩票技术，软件使用，遗漏搜索
+    </a>
+  </h1>
+  <div class="post-meta">
+    
+    <span class="meta-item pc-show">
+      <i class="fa fa-calendar-o"></i>
+      <span>发布于</span>
+      <span>2024-03-09</span>
+      <span class="post-meta-divider pc-show">|</span>
+    </span>
+    
+    <span class="meta-item">
+      <i class="fa fa-clock-o"></i>
+      <span>1分钟</span>
+    </span>
+    <span class="meta-item">
+      <span class="post-meta-divider">|</span>
+      <i class="fa fa-file-word-o"></i>
+      <span>197<span class="pc-show">字数</span></span>
+    </span>
+    
+  </div>
+</header>
+      <div class="post-body">
+        
+        
+          
+        
+        
+        <div class="post-button text-center">
+          <a class="btn" href="https://feng888777.github.io/post/cai-piao-ji-zhu-ruan-jian-shi-yong-yi-lou-sou-suo/" rel="contents">
+            阅读全文 »
+          </a>
+        </div>
+        
+      </div>
+      
+    </div>
+  </article>
+
+  <article class="post-list-box  post box-shadow-wrapper">
+    <div class="article-wrapper bg-color">
+      <header class="post-header">
+  <h1 class="post-title">
+    <a class="post-title-link" href="https://feng888777.github.io/post/cai-piao-ji-zhu-qi-miao-qu-shi-fen-xi-k-xian-xing-tai-yuan-ding/">
+      彩票技术，奇妙趋势分析，K线形态，圆顶
+    </a>
+  </h1>
+  <div class="post-meta">
+    
+    <span class="meta-item pc-show">
+      <i class="fa fa-calendar-o"></i>
+      <span>发布于</span>
+      <span>2024-03-08</span>
+      <span class="post-meta-divider pc-show">|</span>
+    </span>
+    
+    <span class="meta-item">
+      <i class="fa fa-folder-o"></i>
+      <span class="pc-show">分类于</span>
+      
+      
+      <a href="https://feng888777.github.io/tag/ELWsBxdqW/">
+        <span>彩票技术</span>
+      </a>
+      
+      
+    </span>
+    <span class="post-meta-divider">|</span>
+    
+    <span class="meta-item">
+      <i class="fa fa-clock-o"></i>
+      <span>2分钟</span>
+    </span>
+    <span class="meta-item">
+      <span class="post-meta-divider">|</span>
+      <i class="fa fa-file-word-o"></i>
+      <span>278<span class="pc-show">字数</span></span>
+    </span>
+    
+  </div>
+</header>
+      <div class="post-body">
+        
+        
+          
+        
+        
+        <div class="post-button text-center">
+          <a class="btn" href="https://feng888777.github.io/post/cai-piao-ji-zhu-qi-miao-qu-shi-fen-xi-k-xian-xing-tai-yuan-ding/" rel="contents">
+            阅读全文 »
+          </a>
+        </div>
+        
+      </div>
+      
+    </div>
+  </article>
+
+  <article class="post-list-box  post box-shadow-wrapper">
+    <div class="article-wrapper bg-color">
+      <header class="post-header">
+  <h1 class="post-title">
+    <a class="post-title-link" href="https://feng888777.github.io/post/cai-piao-ji-zhu-qi-miao-qu-shi-fen-xi-k-xian-qu-shi-xing-tai-tou-jian-di/">
+      彩票技术，奇妙趋势分析，K线趋势形态。头肩底
+    </a>
+  </h1>
+  <div class="post-meta">
+    
+    <span class="meta-item pc-show">
+      <i class="fa fa-calendar-o"></i>
+      <span>发布于</span>
+      <span>2024-03-07</span>
+      <span class="post-meta-divider pc-show">|</span>
+    </span>
+    
+    <span class="meta-item">
+      <i class="fa fa-folder-o"></i>
+      <span class="pc-show">分类于</span>
+      
+      
+      <a href="https://feng888777.github.io/tag/ELWsBxdqW/">
+        <span>彩票技术</span>
+      </a>
+      
+      
+    </span>
+    <span class="post-meta-divider">|</span>
+    
+    <span class="meta-item">
+      <i class="fa fa-clock-o"></i>
+      <span>2分钟</span>
+    </span>
+    <span class="meta-item">
+      <span class="post-meta-divider">|</span>
+      <i class="fa fa-file-word-o"></i>
+      <span>315<span class="pc-show">字数</span></span>
+    </span>
+    
+  </div>
+</header>
+      <div class="post-body">
+        
+        
+          
+        
+        
+        <div class="post-button text-center">
+          <a class="btn" href="https://feng888777.github.io/post/cai-piao-ji-zhu-qi-miao-qu-shi-fen-xi-k-xian-qu-shi-xing-tai-tou-jian-di/" rel="contents">
+            阅读全文 »
+          </a>
+        </div>
+        
+      </div>
+      
+    </div>
+  </article>
+  
+            
+            
+<div class="page bg-color">
+  <ul class="pagination-ul">
+    
+    
+      
+        <li class="pagination-li pagination-active">
+            <a href="/page/../">
+              1
+            </a>
+        </li>
+      
+        <li class="pagination-li ">
+            <a href="/page/2">
+              2
+            </a>
+        </li>
+      
+    
+    
+      <li class="pagination-dir">
+        <a href="/page/2">
+          <i class="fa fa-angle-right"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <div class="footer-box">
+  <footer class="footer">
+    <div class="copyright">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | © 2019-2020 Theme By <a href="https://github.com/hsxyhao/gridea-theme-next" target="_blank">HsxyHao</a>
+    </div>
+    <div class="poweredby">
+      Powered by <a href="feng888777.github.io" target="_blank">jiudi</a>
+    </div>
+  </footer>
+  
+  
+  <div class="gemini back-to-top" id="back_to_top">
+    <i class="fa fa-arrow-up"></i>
+    
+    <span class="scrollpercent">
+      <span id="back_to_top_text">0</span>%
+    </span>
+    
+  </div>
+  
+  
+  
+    
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
+  <div class="aplayer" id="aplayer"></div>
+  <script>
+  let musics = JSON.parse('[{"author":"","cover":"","lrc":"","musicLink":"https://c6.y.qq.com/base/fcgi-bin/u?__=0v8paQdNueSS","musicName":""}]');
+  let mediaMusic = [];
+  for (let i = 0; i < musics.length; i++) {
+    let item = musics[i];
+    mediaMusic.push({
+      name: item.musicName,
+      artist: item.author,
+      url: item.musicLink,
+      lrc: item.lrc,
+      cover: item.cover
+    });
+  }
+
+  const ap = new APlayer({
+      container: document.getElementById('aplayer'),
+      fixed: true,
+      lrcType: 3,
+      listFolded: false,
+      listMaxHeight: 90,
+      audio: mediaMusic
+  });
+  window.addEventListener('load', function() {
+    let postBody = document.querySelector('#post_body');
+    let hs = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'];
+    postBody && hs.forEach(h => {
+      let helems = postBody.querySelectorAll(h);
+      if (helems.length > 0) {
+        helems.forEach(elem => {
+          elem.id = encodeURI(elem.id);
+        })
+      }
+    })
+  })
+  </script>
+
+
+  
+</div>
+<script>
+
+  let sideBarOpen = 'sidebar-open';
+  let body = document.body;
+  let back2Top = document.querySelector('#back_to_top'),
+  back2TopText = document.querySelector('#back_to_top_text'),
+  drawerBox = document.querySelector('#drawer_box'),
+  rightSideBar = document.querySelector('.sidebar'),
+  viewport = document.querySelector('body');
+
+  function scrollAnimation(currentY, targetY) {
+   
+    let needScrollTop = targetY - currentY
+    let _currentY = currentY
+    setTimeout(() => {
+      const dist = Math.ceil(needScrollTop / 10)
+      _currentY += dist
+      window.scrollTo(_currentY, currentY)
+      if (needScrollTop > 10 || needScrollTop < -10) {
+        scrollAnimation(_currentY, targetY)
+      } else {
+        window.scrollTo(_currentY, targetY)
+      }
+    }, 1)
+  }
+
+  back2Top.addEventListener("click", function(e) {
+    scrollAnimation(document.scrollingElement.scrollTop, 0);
+    e.stopPropagation();
+    return false;
+  });
+  
+  window.addEventListener('scroll', function(e) {
+    let percent = document.scrollingElement.scrollTop / (document.scrollingElement.scrollHeight - document.scrollingElement.clientHeight) * 100;
+    if (percent > 1 && !back2Top.classList.contains('back-top-active')) {
+      back2Top.classList.add('back-top-active');
+    }
+    if (percent == 0) {
+      back2Top.classList.remove('back-top-active');
+    }
+    if (back2TopText) {
+      back2TopText.textContent = Math.floor(percent);
+    }
+  });
+
+  
+  let hasCacu = false;
+  window.onresize = function() {
+    if (window.width > 991) {
+      calcuHeight();
+    } else {
+      hasCacu = false;
+    }
+  }
+
+  function calcuHeight() {
+    // 动态调整站点概览高度
+    if (!hasCacu && back2Top.classList.contains('pisces') || back2Top.classList.contains('gemini')) {
+      let sideBar = document.querySelector('.sidebar');
+      let navUl = document.querySelector('#site_nav');
+      sideBar.style = 'margin-top:' + (navUl.offsetHeight + navUl.offsetTop + 15) + 'px;';
+      hasCacu = true;
+    }
+  }
+  calcuHeight();
+  
+  let open = false, MOTION_TIME = 300, RIGHT_MOVE_DIS = '320px';
+
+  if (drawerBox) {
+    let rightMotions = document.querySelectorAll('.right-motion');
+    let right = drawerBox.classList.contains('right');
+
+    let transitionDir = right ? "transition.slideRightIn" : "transition.slideLeftIn";
+
+    let openProp, closeProp;
+    if (right) {
+      openProp = {
+        paddingRight: RIGHT_MOVE_DIS 
+      };
+      closeProp = {
+        paddingRight: '0px'
+      };
+    } else {
+      openProp = {
+        paddingLeft: RIGHT_MOVE_DIS 
+      };
+      closeProp = {
+        paddingLeft: '0px'
+      };
+    }
+
+    drawerBox.onclick = function() {
+      open = !open;
+      window.Velocity(rightSideBar, 'stop');
+      window.Velocity(viewport, 'stop');
+      window.Velocity(rightMotions, 'stop');
+      if (open) {
+        window.Velocity(rightSideBar, {
+          width: RIGHT_MOVE_DIS
+        }, {
+          duration: MOTION_TIME,
+          begin: function() {
+            window.Velocity(rightMotions, transitionDir,{ });
+          }
+        })
+        window.Velocity(viewport, openProp,{
+          duration: MOTION_TIME
+        });
+      } else {
+        window.Velocity(rightSideBar, {
+          width: '0px'
+        }, {
+          duration: MOTION_TIME,
+          begin: function() {
+            window.Velocity(rightMotions, {
+              opacity: 0
+            });
+          }
+        })
+        window.Velocity(viewport, closeProp ,{
+          duration: MOTION_TIME
+        });
+      }
+      for (let i = 0; i < drawerBox.children.length; i++) {
+        drawerBox.children[i].classList.toggle('muse-line');
+      }
+      drawerBox.classList.toggle(sideBarOpen);
+    }
+  }
+
+  // 链接跳转
+  let newWindow = 'false'
+  if (newWindow === 'true') {
+    let links = document.querySelectorAll('.post-body a')
+    links.forEach(item => {
+      if (!item.classList.contains('btn')) {
+        item.setAttribute("target","_blank");
+      }
+    })
+  }
+  // 代码高亮
+  hljs.initHighlightingOnLoad();
+
+</script>
+    <div class="light-box" id="light_box"></div>
+<script>
+  let imgs = document.querySelectorAll('.post-body img');
+  let lightBox = document.querySelector('#light_box');
+  lightBox.addEventListener('mousedown', (e) => {
+    e.preventDefault()
+  })
+  lightBox.addEventListener('mousewheel', (e) => {
+    e.preventDefault()
+  })
+  let width = window.innerWidth * 0.8;
+  lightBox.onclick = () => {
+    let img = lightBox.querySelector('img');
+    lightBox.style = '';
+    img && img.remove();
+  }
+  imgs.forEach(item => {
+    item.onclick = function (e) {
+      let lightImg = document.createElement('img');
+      lightImg.src = this.src;
+      lightBox.style = `height: 100%; opacity: 1; background-color: rgba(0, 0, 0, 0.5);cursor: zoom-out;`;
+      lightImg.style = `width: ${width}px; border: 1px solid #fff; border-radius: 2px;`;
+      lightImg.onclick = function () {
+        lightBox.style = '';
+        this.remove();
+      }
+      lightBox.append(lightImg);
+    }
+  })
+</script>
+  </div>
+</body>
+<input hidden id="copy" />
+<script>
+  //拿来主义(真香)^_^，Clipboard 实现摘自掘金 https://juejin.im/post/5aefeb6e6fb9a07aa43c20af
+  window.Clipboard = (function (window, document, navigator) {
+    var textArea,
+      copy;
+
+    // 判断是不是ios端
+    function isOS() {
+      return navigator.userAgent.match(/ipad|iphone/i);
+    }
+    //创建文本元素
+    function createTextArea(text) {
+      textArea = document.createElement('textArea');
+      textArea.value = text;
+      textArea.style.width = 0;
+      textArea.style.height = 0;
+      textArea.clientHeight = 0;
+      textArea.clientWidth = 0;
+      document.body.appendChild(textArea);
+    }
+    //选择内容
+    function selectText() {
+      var range,
+        selection;
+
+      if (isOS()) {
+        range = document.createRange();
+        range.selectNodeContents(textArea);
+        selection = window.getSelection();
+        selection.removeAllRanges();
+        selection.addRange(range);
+        textArea.setSelectionRange(0, 999999);
+      } else {
+        textArea.select();
+      }
+    }
+
+    //复制到剪贴板
+    function copyToClipboard() {
+      try {
+        document.execCommand("Copy")
+      } catch (err) {
+        alert("复制错误！请手动复制！")
+      }
+      document.body.removeChild(textArea);
+    }
+
+    copy = function (text) {
+      createTextArea(text);
+      selectText();
+      copyToClipboard();
+    };
+
+    return {
+      copy: copy
+    };
+  })(window, document, navigator);
+
+  function copyCode(e) {
+    if (e.srcElement.tagName === 'SPAN' && e.srcElement.classList.contains('copy-code')) {
+      let code = e.currentTarget.querySelector('code');
+      var text = code.innerText;
+      if (e.srcElement.textContent === '复制成功') {
+        console.log('复制操作频率过高');
+        return;
+      }
+      e.srcElement.textContent = '复制成功';
+      (function (elem) {
+        setTimeout(() => {
+          if (elem.textContent === '复制成功') {
+            elem.textContent = '复制代码'
+          }
+        }, 1000);
+      })(e.srcElement)
+      Clipboard.copy(text);
+    }
+  }
+
+  let pres = document.querySelectorAll('pre');
+  pres.forEach(pre => {
+    let code = pre.querySelector('code');
+    let copyElem = document.createElement('span');
+    copyElem.classList.add('copy-code');
+    copyElem.textContent = '复制代码';
+    pre.appendChild(copyElem);
+    pre.onclick = copyCode
+  })
+</script>
+<script src="/media/js/motion.js"></script>
+
+<!-- <div class="search-mask" id="search_mask">
+  <div class="search-box">
+    <div class="search-title">
+      <i class="fa fa-search"></i>
+      <div class="input-box">
+        <input type="text" placeholder="搜索">
+      </div>
+      <i class="fa fa-times-circle"></i>
+    </div>
+    <div class="result">
+      
+      <div class="item">
+        <a class="result-title" href="https://feng888777.github.io/post/cai-piao-ji-zhu-sha-hao-huan-jiang-sha-hao-yi-lou-k-fu-zhu-sha-hao/"" data-c="
+          &lt;p&gt;彩票技术，杀号，还讲杀号。遗漏K辅助杀号。&lt;br&gt;
+&lt;img src=&#34;https://feng888777.github.io/post-images/1710519428034.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;以下讲解均为个人角度理解。不一定完全对，理性参考。&lt;br&gt;
+免费分享，未必适合每个人，只放框架引发思考，抛砖引玉，细节自己探究。&lt;br&gt;
+非大善人，非救世主。拒绝喷子。（&lt;mark&gt;滚滚滚滚滚滚滚滚滚，永久拉黑&lt;/mark&gt;）&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;遗漏K辅助杀号：&lt;br&gt;
+遗漏K代表：带遗漏范围的K线，遗漏范围的两面性表达。&lt;br&gt;
+遗漏K的特性：呈阶段性区间排列，在上则上，在下则下。&lt;/p&gt;
+&lt;p&gt;用法：&lt;br&gt;
+若是理论遗漏K呈现阶段性位于下轨空间，且整体趋势下降被压制，则频率K可以放心杀号。&lt;br&gt;
+需要预防，理论遗漏K与频率K的底背离产生。&lt;/p&gt;
+&lt;p&gt;注意：&lt;br&gt;
+杀号的核心依旧是频率K跌破支撑。&lt;br&gt;
+在小于10%的概率杀号中，频率K单周期表现不明显，可以放大周期，参考遗漏K。&lt;/p&gt;
+&lt;p&gt;彩票技术交流圈 防失联，务必添加&lt;/p&gt;
+&lt;p&gt;青羽：&lt;br&gt;
+QQ：1601708361&lt;br&gt;
+skype：d9516888@outlook.com&lt;br&gt;
+68chat：89gw8l8l66&lt;/p&gt;
+&lt;p&gt;用途：&lt;br&gt;
+skype：防失联与业务咨询&lt;br&gt;
+68chat：业务执行圈子技术交流群&lt;/p&gt;
+&lt;p&gt;软件下载&lt;br&gt;
+skype官网：shiguangpu.com&lt;br&gt;
+68chat官网：68chat.org&lt;/p&gt;
+">彩票技术，杀号，还讲杀号。遗漏K辅助杀号。</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" href="https://feng888777.github.io/post/cai-piao-ji-zhu-sha-hao-zai-jiang-zhi-biao-sha-hao/"" data-c="
+          &lt;p&gt;彩票技术，杀号，再讲指标杀号。&lt;br&gt;
+&lt;img src=&#34;https://feng888777.github.io/post-images/1710427596581.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;mark&gt;杀号类型&lt;/mark&gt;：&lt;br&gt;
+一：断连开，（断连续0遗漏开出）&lt;br&gt;
+1.趋势顶部，无上升空间，&lt;br&gt;
+2.跌破回抽，被压制无法突破更高。&lt;br&gt;
+不建议选择。&lt;/p&gt;
+&lt;p&gt;二：杀大遗漏。（超出理论遗漏后继续遗漏）&lt;br&gt;
+高位趋势跌破支撑后持续遗漏。&lt;br&gt;
+主要选择。&lt;/p&gt;
+&lt;p&gt;指标辅助杀号：（杀号范围）&lt;br&gt;
+1.跌破支撑为核心&lt;br&gt;
+2.bull三轨下降，特别是中轨。次之K线距离bull下轨有距离。&lt;br&gt;
+3.macd下穿，且不形成底背离。&lt;/p&gt;
+&lt;p&gt;彩票技术交流圈 防失联，务必添加&lt;/p&gt;
+&lt;p&gt;九帝：&lt;br&gt;
+QQ：1601708361&lt;br&gt;
+skype：d9516888@outlook.com&lt;br&gt;
+68chat：89gw8l8l66&lt;/p&gt;
+&lt;p&gt;用途：&lt;br&gt;
+skype：防失联与业务咨询&lt;br&gt;
+68chat：业务执行圈子技术交流群&lt;/p&gt;
+&lt;p&gt;软件下载&lt;br&gt;
+skype官网：shiguangpu.com&lt;br&gt;
+68chat官网：68chat.org&lt;/p&gt;
+">彩票技术，杀号，再讲指标杀号。</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" href="https://feng888777.github.io/post/cai-piao-ji-zhu-shou-ji-ban-cai-piao-suo-shui-zuo-hao-ruan-jian/"" data-c="
+          &lt;p&gt;彩票技术，手机版彩票缩水做号软件。&lt;br&gt;
+&lt;img src=&#34;https://feng888777.github.io/post-images/1710346931113.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;p&gt;手机版彩票缩水做号软件，一般都比较稀缺。而且功能也相对比较少。&lt;br&gt;
+安卓的还算比较多，苹果就更少了，而且很多问题，爱莫能助。&lt;br&gt;
+一般不建议用手机去做，电脑它不香嘛。。。&lt;br&gt;
+但是好多朋友在找，就分享个自用的。&lt;/p&gt;
+&lt;p&gt;简单功能演示&lt;/p&gt;
+&lt;p&gt;软件获取：&lt;br&gt;
+https://www.lanzoub.com/b05f3ysab&lt;br&gt;
+密码:efst&lt;/p&gt;
+&lt;p&gt;彩票技术交流圈 防失联，务必添加&lt;/p&gt;
+&lt;p&gt;九帝：&lt;br&gt;
+QQ：1601708361&lt;br&gt;
+skype：d9516888@outlook.com&lt;br&gt;
+68chat：89gw8l8l66&lt;/p&gt;
+&lt;p&gt;用途：&lt;br&gt;
+skype：防失联与业务咨询&lt;br&gt;
+68chat：业务执行圈子技术交流群&lt;/p&gt;
+&lt;p&gt;软件下载&lt;br&gt;
+skype官网：shiguangpu.com&lt;br&gt;
+68chat官网：68chat.org&lt;/p&gt;
+">彩票技术，手机版彩票缩水做号软件。</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" href="https://feng888777.github.io/post/cai-piao-ji-zhu-wan-fa-fen-xiang-pin-jie-wan-fa/"" data-c="
+          &lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://feng888777.github.io/post-images/1710261706840.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;视频讲解：&lt;br&gt;
+https://www.bilibili.com/video/BV1dc411e7d5/&lt;/p&gt;
+&lt;p&gt;拼接：&lt;br&gt;
+定位，二星，三星，四星，五星，&lt;br&gt;
+从低向高拼接。&lt;/p&gt;
+&lt;p&gt;现象：&lt;br&gt;
+单个位置比较多的注数&lt;br&gt;
+拼接向更高星级后，&lt;br&gt;
+注数会降低。&lt;/p&gt;
+&lt;p&gt;优点：&lt;br&gt;
+避免   选低概率号码准确率低的现象。&lt;br&gt;
+提升选号速度。&lt;/p&gt;
+&lt;p&gt;缺点：&lt;br&gt;
+多个位置由于都有周期的存在，可能会不同出，导致拼接后号码挂掉。&lt;/p&gt;
+&lt;p&gt;建议：&lt;br&gt;
+拼接后概率变化比较大，可以去分析拼接后号码的趋势，伺机切入。&lt;/p&gt;
+&lt;p&gt;彩票技术交流圈 防失联，务必添加&lt;/p&gt;
+&lt;p&gt;九帝：&lt;br&gt;
+QQ：1601708361&lt;br&gt;
+skype：d9516888@outlook.com&lt;br&gt;
+68chat：89gw8l8l66&lt;/p&gt;
+&lt;p&gt;用途：&lt;br&gt;
+skype：防失联与业务咨询&lt;br&gt;
+68chat：业务执行圈子技术交流群&lt;/p&gt;
+&lt;p&gt;软件下载&lt;br&gt;
+skype官网：shiguangpu.com&lt;br&gt;
+68chat官网：68chat.org&lt;/p&gt;
+">彩票技术，玩法分享，拼接玩法</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" href="https://feng888777.github.io/post/cai-piao-ji-zhu-qi-miao-qu-shi-fen-xi-qu-shi-bian-su-xian/"" data-c="
+          &lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://feng888777.github.io/post-images/1710168483589.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;趋势变速线是用来做未来趋势判定的。&lt;/p&gt;
+&lt;p&gt;而趋势变速线分为两种，一种是下降变速线，一种是上升变速线。&lt;br&gt;
+下降变速线测上升，上升变速线测下降。&lt;/p&gt;
+&lt;p&gt;下降变速线，产生在持续下降的趋势转向向上的过程中。&lt;br&gt;
+以前方最高的趋势顶点作为原点，向后连接趋势的顶点，形成高位压力线。&lt;br&gt;
+一旦趋势突破了三根下降的高位压力线，且趋势底部在持续抬高，那么判定未来的趋势方向持续向上。&lt;/p&gt;
+&lt;p&gt;上升变速线，产生在持续向上的趋势中。&lt;br&gt;
+以前方最低的趋势低点为原点，向后连接趋势低点。形成底部支撑线。&lt;br&gt;
+一旦后面的趋势跌破了两根 底部支撑线，并且高位产生明显的持续走平或者转向向下，那么判定未来的趋势方向持续向下。&lt;/p&gt;
+&lt;p&gt;下降变速线，测出来上升的趋势后，可以进行择机切入。&lt;br&gt;
+而在切入的过程中，也需要用上升变速线去测当前趋势是否将要转向向下。&lt;br&gt;
+两者相辅相成，可能会减少出手次数，但会提高命中精度。&lt;/p&gt;
+&lt;p&gt;彩票技术交流圈 防失联，务必添加&lt;/p&gt;
+&lt;p&gt;九帝：&lt;br&gt;
+QQ：1601708361&lt;br&gt;
+skype：d9516888@outlook.com&lt;br&gt;
+68chat：89gw8l8l66&lt;/p&gt;
+&lt;p&gt;用途：&lt;br&gt;
+skype：防失联与业务咨询&lt;br&gt;
+68chat：业务执行圈子技术交流群&lt;/p&gt;
+&lt;p&gt;软件下载&lt;br&gt;
+skype官网：shiguangpu.com&lt;br&gt;
+68chat官网：68chat.org&lt;/p&gt;
+">彩票技术，奇妙趋势分析，趋势变速线</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" href="https://feng888777.github.io/post/cai-piao-ji-zhu-qian-tan-qu-shi-qu-shi-de-zhen-dang-yu-ya-suo/"" data-c="
+          &lt;p&gt;&lt;img src=&#34;https://feng888777.github.io/post-images/1710087545366.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+震荡 ，压缩 ：趋势的波动。&lt;/p&gt;
+&lt;p&gt;视频讲解&lt;br&gt;
+https://www.bilibili.com/video/BV1um411o7sg/&lt;/p&gt;
+&lt;p&gt;震荡趋势：&lt;br&gt;
+趋势波动很大，无论是开出与遗漏，方向性明显，持续性也很明显。&lt;br&gt;
+直观的表现就是bull的宽度比较宽。&lt;br&gt;
+活趋势。&lt;/p&gt;
+&lt;p&gt;趋势压缩：&lt;br&gt;
+趋势的波动很小。开出与遗漏的持续时间很短。方向性不确定。盘整。&lt;br&gt;
+直观的表现就是bull的宽度非常窄。&lt;br&gt;
+死趋势。&lt;/p&gt;
+&lt;p&gt;选择建议：&lt;br&gt;
+宁等活趋势的遗漏，也不做死趋势的连开。&lt;br&gt;
+死趋势，再好，其开出空间是有限的。&lt;br&gt;
+活趋势，再垃圾，其未来的开出预期是良好的。&lt;/p&gt;
+&lt;p&gt;彩票技术交流圈 防失联，务必添加&lt;/p&gt;
+&lt;p&gt;九帝：&lt;br&gt;
+QQ：1601708361&lt;br&gt;
+skype：d9516888@outlook.com&lt;br&gt;
+68chat：89gw8l8l66&lt;/p&gt;
+&lt;p&gt;用途：&lt;br&gt;
+skype：防失联与业务咨询&lt;br&gt;
+68chat：业务执行圈子技术交流群&lt;/p&gt;
+&lt;p&gt;软件下载&lt;br&gt;
+skype官网：shiguangpu.com&lt;br&gt;
+68chat官网：68chat.org&lt;/p&gt;
+">彩票技术，浅谈趋势，趋势的震荡与压缩。</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" href="https://feng888777.github.io/post/cai-piao-ji-zhu-ruan-jian-shi-yong-yi-lou-sou-suo/"" data-c="
+          &lt;p&gt;彩票技术，软件使用，遗漏搜索&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://feng888777.github.io/post-images/1709999842396.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;视频讲解：&lt;br&gt;
+https://www.bilibili.com/video/BV1Z5411e76U/&lt;/p&gt;
+&lt;p&gt;用法：&lt;br&gt;
+用不同周期中0-99999的遗漏值去控制K线形态。&lt;/p&gt;
+&lt;p&gt;优点：&lt;br&gt;
+比图形搜索中的01代码更灵活。&lt;br&gt;
+可以限定周期内的遗漏范围。&lt;br&gt;
+能限定一个比较大的波波段形态。&lt;/p&gt;
+&lt;p&gt;建议：&lt;br&gt;
+没有万能的参数。&lt;br&gt;
+遗漏搜索出的图形仍然需要理性判断。不能盲目出号。&lt;br&gt;
+可以比较快速的搜索到到自己想要判断的K线形态。&lt;/p&gt;
+&lt;p&gt;彩票技术交流圈 防失联，务必添加&lt;/p&gt;
+&lt;p&gt;九帝：&lt;br&gt;
+QQ：1601708361&lt;br&gt;
+skype：d9516888@outlook.com&lt;br&gt;
+68chat：89gw8l8l66&lt;/p&gt;
+&lt;p&gt;用途：&lt;br&gt;
+skype：防失联与业务咨询&lt;br&gt;
+68chat：业务执行圈子技术交流群&lt;/p&gt;
+&lt;p&gt;软件下载&lt;br&gt;
+skype官网：shiguangpu.com&lt;br&gt;
+68chat官网：68chat.org&lt;/p&gt;
+">彩票技术，软件使用，遗漏搜索</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" href="https://feng888777.github.io/post/cai-piao-ji-zhu-qi-miao-qu-shi-fen-xi-k-xian-xing-tai-yuan-ding/"" data-c="
+          &lt;p&gt;圆顶&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://feng888777.github.io/post-images/1709913436953.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;特征：&lt;/p&gt;
+&lt;p&gt;1、出现在涨势中&lt;/p&gt;
+&lt;p&gt;2、上涨的速度由越来越快逐渐转为缓慢的下沉，最后下跌的速度加快，形成一个圆顶状；&lt;/p&gt;
+&lt;p&gt;3、MACD无明显的特征，一般在顶点时MACD柱状体有走平的几项。有时MACD和K线走势保持同步也呈圆顶状。&lt;/p&gt;
+&lt;p&gt;技术含义：见顶回落，转冷信号。&lt;/p&gt;
+&lt;p&gt;操作建议：玩彩者在下跌速度加快时要果断退出。&lt;/p&gt;
+&lt;p&gt;注：&lt;/p&gt;
+&lt;p&gt;1、圆顶形成的时间越长，下跌的力度就越大，&lt;/p&gt;
+&lt;p&gt;2、圆顶一般无颈线可辨认，（个别例外），&lt;/p&gt;
+&lt;p&gt;3、虽然在下降的过程当中可能会有局部的反弹，但是总体的趋势方向不会变，不会有大的反弹趋势出现，遗漏K的理论周期趋势再加以结合会更有说服力。&lt;/p&gt;
+&lt;p&gt;彩票技术交流圈 防失联，务必添加&lt;/p&gt;
+&lt;p&gt;九帝：&lt;br&gt;
+QQ：1601708361&lt;br&gt;
+skype：d9516888@outlook.com&lt;br&gt;
+68chat：89gw8l8l66&lt;/p&gt;
+&lt;p&gt;用途：&lt;br&gt;
+skype：防失联与业务咨询&lt;br&gt;
+68chat：业务执行圈子技术交流群&lt;/p&gt;
+&lt;p&gt;软件下载&lt;br&gt;
+skype官网：shiguangpu.com&lt;br&gt;
+68chat官网：68chat.org&lt;/p&gt;
+">彩票技术，奇妙趋势分析，K线形态，圆顶</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" href="https://feng888777.github.io/post/cai-piao-ji-zhu-qi-miao-qu-shi-fen-xi-k-xian-qu-shi-xing-tai-tou-jian-di/"" data-c="
+          &lt;p&gt;头肩底&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://feng888777.github.io/post-images/1709825408291.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;特征：&lt;/p&gt;
+&lt;p&gt;1、在跌势中出现；&lt;/p&gt;
+&lt;p&gt;2、有3个低谷，左右两个低谷的高低基本处于同一水平位置上，但当中的&lt;/p&gt;
+&lt;p&gt;低谷的低点明显高于左右两个低谷的低占．&lt;/p&gt;
+&lt;p&gt;3、前两冫欠反弹高点基本相同，最后一冫欠反弹向上突破了前两冫欠反弹高点的&lt;/p&gt;
+&lt;p&gt;连线（俗称颈线），．&#39;并收于其上方方；&lt;/p&gt;
+&lt;p&gt;4、MACD出现极度萎缩后，向上冲破颈线时，MACD显著升高；&lt;/p&gt;
+&lt;p&gt;5、在跌破压力线之后，常常有回抽，在颈线附近止跌回升，从而确认向上&lt;/p&gt;
+&lt;p&gt;突破有效。&lt;/p&gt;
+&lt;p&gt;技术含义：见底回升，上升信号。&lt;/p&gt;
+&lt;p&gt;备注：&lt;/p&gt;
+&lt;p&gt;1、筑底时间越长越有可能产生大涨行情，&lt;/p&gt;
+&lt;p&gt;2、在实际走势中《也可能形成两个右肩、两个左肩，或一个右肩、，两个左&lt;/p&gt;
+&lt;p&gt;肩；或两个右肩、一个左肩的图形。这种变异的头肩底与标准的头肩底技术含&lt;/p&gt;
+&lt;p&gt;义相同。&lt;/p&gt;
+&lt;p&gt;彩票技术交流圈 防失联，务必添加&lt;/p&gt;
+&lt;p&gt;九帝：&lt;br&gt;
+QQ：1601708361&lt;br&gt;
+skype：d9516888@outlook.com&lt;br&gt;
+68chat：89gw8l8l66&lt;/p&gt;
+&lt;p&gt;用途：&lt;br&gt;
+skype：防失联与业务咨询&lt;br&gt;
+68chat：业务执行圈子技术交流群&lt;/p&gt;
+&lt;p&gt;软件下载&lt;br&gt;
+skype官网：shiguangpu.com&lt;br&gt;
+68chat官网：68chat.org&lt;/p&gt;
+">彩票技术，奇妙趋势分析，K线趋势形态。头肩底</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" href="https://feng888777.github.io/post/cai-piao-ji-zhu-qu-shi-huan-jing-jie-xi/"" data-c="
+          &lt;p&gt;&lt;img src=&#34;https://feng888777.github.io/post-images/1709737755451.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+趋势的研判，是需要环境的。&lt;br&gt;
+这个环境就是冷和热两种属性。&lt;br&gt;
+趋势的转换也是在冷和热之间进行无限延展变化的。&lt;/p&gt;
+&lt;p&gt;但是在这个过程中，我们不知道 冷可以冷多久，热可以热多久。&lt;br&gt;
+我们看到的趋势是已经形成的。我们需要做的事预判未来的方向。&lt;/p&gt;
+&lt;p&gt;趋势的研判，是分层级的。&lt;br&gt;
+大局观和细微观分别代表趋势大方向的分析，与做切入的具象分析。&lt;br&gt;
+比较大的方向，才叫趋势，这个趋势多表现在多周期，遗漏K，二阶遗漏，等具有范围性和周期拓展性的指标上。&lt;br&gt;
+当前的切入研判，更多的表现在单周期频率K和遗漏图上。&lt;/p&gt;
+&lt;p&gt;为什么要进行趋势研判，而后再做切入？&lt;br&gt;
+我做一个简单的比喻。&lt;br&gt;
+趋势环境代表春夏秋冬。具体切入代表时令的衣着选择。&lt;br&gt;
+就好像冬天严寒，需要穿厚衣服保暖。&lt;br&gt;
+就好像夏天酷暑，需要穿薄衣服纳凉。&lt;/p&gt;
+&lt;p&gt;放到趋势中，可以理解为，&lt;br&gt;
+整体趋势环境走热的时候，我们可以择机多做切入。更容易中出。&lt;br&gt;
+整体趋势环境爆冷的时候，可以做切入的机会少，命中的概率低。&lt;/p&gt;
+&lt;p&gt;彩票技术交流圈 防失联，务必添加&lt;/p&gt;
+&lt;p&gt;九帝：&lt;br&gt;
+QQ：1601708361&lt;br&gt;
+skype：d9516888@outlook.com&lt;br&gt;
+68chat：89gw8l8l66&lt;/p&gt;
+&lt;p&gt;用途：&lt;br&gt;
+skype：防失联与业务咨询&lt;br&gt;
+68chat：业务执行圈子技术交流群&lt;/p&gt;
+&lt;p&gt;软件下载&lt;br&gt;
+skype官网：shiguangpu.com&lt;br&gt;
+68chat官网：68chat.org&lt;/p&gt;
+">彩票技术，趋势环境解析</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" href="https://feng888777.github.io/post/cai-piao-ji-zhu-ding-bei-chi-xing-tai-dui-qu-shi-de-ying-xiang-yi-ji-yun-yong/"" data-c="
+          &lt;p&gt;&lt;img src=&#34;https://feng888777.github.io/post-images/1709650037757.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+顶背离现象&lt;br&gt;
+K线 高点上升&lt;br&gt;
+macd 高点下降&lt;br&gt;
+背道而驰&lt;/p&gt;
+&lt;p&gt;位置：&lt;br&gt;
+产生在趋势顶部&lt;br&gt;
+上升和下降趋势中都存在（大趋势环境）&lt;/p&gt;
+&lt;p&gt;背离结果：&lt;br&gt;
+顶部压制非常强  未来可能会产生遗漏调整&lt;br&gt;
+遗漏交错  开出不顺畅&lt;/p&gt;
+&lt;p&gt;背离结束：&lt;br&gt;
+macd顶部突破   K线形成大遗漏   支撑有效&lt;/p&gt;
+&lt;p&gt;背离运用：&lt;br&gt;
+顶背离结束后，突破压制，方向未变 形成支撑，  一波强有力的趋势。&lt;br&gt;
+产生顶背离，压制效果增强，方向转变趋势转冷，   大瀑布下跌&lt;/p&gt;
+&lt;p&gt;彩票技术交流圈 防失联，务必添加&lt;/p&gt;
+&lt;p&gt;九帝：&lt;br&gt;
+QQ：1601708361&lt;br&gt;
+skype：d9516888@outlook.com&lt;br&gt;
+68chat：89gw8l8l66&lt;/p&gt;
+&lt;p&gt;用途：&lt;br&gt;
+skype：防失联与业务咨询&lt;br&gt;
+68chat：业务执行圈子技术交流群&lt;/p&gt;
+&lt;p&gt;软件下载&lt;br&gt;
+skype官网：shiguangpu.com&lt;br&gt;
+68chat官网：68chat.org&lt;/p&gt;
+">彩票技术，顶背离形态对趋势的影响以及运用</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" href="https://feng888777.github.io/post/cai-piao-ji-zhu-qu-shi-xuan-ze-yu-deng-dai/"" data-c="
+          &lt;p&gt;彩票技术，趋势选择与等待&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://feng888777.github.io/post-images/1709566389577.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;现象：&lt;br&gt;
+许多朋友打三星组选，要么只打组三 要么只打组六。&lt;br&gt;
+不看趋势，就是一直去做单一形态。经常遇到杀号准确，组选形态不给。&lt;/p&gt;
+&lt;p&gt;梳理：&lt;br&gt;
+组三270注，组六720注。每一个形态都有自身的趋势和反趋势。&lt;br&gt;
+（小建议 ：三星不要杀豹子）&lt;br&gt;
+既然做形态，就要在形态趋势OK的前提下去做。趋势不到很容易条件不容错。&lt;br&gt;
+此为做单一形态，去等待形态趋势。&lt;/p&gt;
+&lt;p&gt;如果是做趋势，那就要去参考组选形态两边的趋势，去确定当前以及未来一段时间之内的主趋势形态。在正确的趋势下做正确的形态。&lt;br&gt;
+此为趋势选择。&lt;/p&gt;
+&lt;p&gt;建议：&lt;br&gt;
+看开奖号码的规律，走势图的规律，以及趋势图，都是在预判未来的形态开出可能性。&lt;br&gt;
+单论趋势，永远预判的是未来的开出可能性，而不是盲目的追热。&lt;br&gt;
+当前热未必一直热或者未必不一直热，当前冷未必一直冷或者未必不一直冷。&lt;/p&gt;
+&lt;p&gt;彩票技术交流圈 防失联，务必添加&lt;/p&gt;
+&lt;p&gt;彩票技术交流圈 防失联，务必添加&lt;/p&gt;
+&lt;p&gt;九帝：&lt;br&gt;
+QQ：1601708361&lt;br&gt;
+skype：d9516888@outlook.com&lt;br&gt;
+68chat：89gw8l8l66&lt;/p&gt;
+&lt;p&gt;用途：&lt;br&gt;
+skype：防失联与业务咨询&lt;br&gt;
+68chat：业务执行圈子技术交流群&lt;/p&gt;
+&lt;p&gt;软件下载&lt;br&gt;
+skype官网：shiguangpu.com&lt;br&gt;
+68chat官网：68chat.org&lt;/p&gt;
+">彩票技术，趋势选择与等待</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" href="https://feng888777.github.io/post/cai-piao-ji-zhu-wu-nao-xuan-pei-dan-kuai-su-chu-hao-zhun-que-lu-ji-gao/"" data-c="
+          &lt;p&gt;彩票技术，无脑选配胆，快速出号，准确率极高。&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://feng888777.github.io/post-images/1709479362660.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;视频讲解 :&lt;br&gt;
+https://www.bilibili.com/video/BV1K6421u7PF/&lt;/p&gt;
+&lt;p&gt;大纲&lt;br&gt;
+配胆，概率很高。相当于大底。&lt;br&gt;
+举例：五星1配四   四胆是 92224注。&lt;br&gt;
+大底挂掉是个悲伤的故事，大腿拍肿都没用。&lt;/p&gt;
+&lt;p&gt;选配胆存在的现象&lt;br&gt;
+瞎蒙就能中？认真选反而挂？认真选还真选不出来，很纠结&lt;/p&gt;
+&lt;p&gt;选配胆方法：&lt;br&gt;
+把大底进行胆码排序，取前段或者中段。4-5位。&lt;/p&gt;
+&lt;p&gt;原理：&lt;br&gt;
+大底不管中不中，必然有多个位置是命中的。挂的只是其中的少数量位置，或者是错位。&lt;br&gt;
+那么在大底多个位置中出的情况下进行的胆码排序，其可信度是很高的。&lt;/p&gt;
+&lt;p&gt;彩票技术交流圈 防失联，务必添加&lt;/p&gt;
+&lt;p&gt;九帝：&lt;br&gt;
+QQ：1601708361&lt;br&gt;
+skype：d9516888@outlook.com&lt;br&gt;
+68chat：89gw8l8l66&lt;/p&gt;
+&lt;p&gt;用途：&lt;br&gt;
+skype：防失联与业务咨询&lt;br&gt;
+68chat：业务执行圈子技术交流群&lt;/p&gt;
+&lt;p&gt;软件下载&lt;br&gt;
+skype官网：shiguangpu.com&lt;br&gt;
+68chat官网：68chat.org&lt;/p&gt;
+">彩票技术，无脑选配胆，快速出号，准确率极高。</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" href="https://feng888777.github.io/post/cai-piao-ji-zhu-guan-yu-dan-ma-tiao-xuan-he-ding-wei-de-jing-yan/"" data-c="
+          &lt;p&gt;彩票技术，关于胆码挑选和定位的经验。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;一：胆码挑选&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;在选择胆码的时候，相信很多朋友习惯于 先划定一个范围 然后慢慢去筛选。&lt;/p&gt;
+&lt;p&gt;比如，用大小单双，或者用012路。看好哪一组再去筛选当组的号。&lt;/p&gt;
+&lt;p&gt;比如，看好1路的号  那么 就从 147里边挑选一个作为主胆。&lt;/p&gt;
+&lt;p&gt;这个方法确实有不错的效果。但是会经常性的出现一些现象。&lt;/p&gt;
+&lt;p&gt;比如看好147，选了1  最后 47都开了 就是不开1。&lt;/p&gt;
+&lt;p&gt;相信很多朋友遇到过这种情况。&lt;/p&gt;
+&lt;p&gt;那么是什么原因导致的呢？&lt;/p&gt;
+&lt;p&gt;我们不妨先思考一个问题。&lt;/p&gt;
+&lt;p&gt;看好的号一定会开出吗？&lt;/p&gt;
+&lt;p&gt;不看好的号一定不开吗？&lt;/p&gt;
+&lt;p&gt;答案当然都是否定的。&lt;/p&gt;
+&lt;p&gt;那么接着说，假定 我们看好的147一定会开。&lt;/p&gt;
+&lt;p&gt;OK ，那我们看好的是 147这个胆组。&lt;/p&gt;
+&lt;p&gt;但是147是由1  4   7 三个胆码组成。&lt;/p&gt;
+&lt;p&gt;也就是说 必然有1到3个号会开出。&lt;/p&gt;
+&lt;p&gt;但是  也有可能只开出一个号。&lt;/p&gt;
+&lt;p&gt;而这三个胆码 有冷有热。&lt;/p&gt;
+&lt;p&gt;接下来就是选择问题。&lt;/p&gt;
+&lt;p&gt;选冷号还是选热号呢？&lt;/p&gt;
+&lt;p&gt;选冷号，如果是持续冷，那就不开。&lt;/p&gt;
+&lt;p&gt;选热号，如果是热到极致，那也不会开。&lt;/p&gt;
+&lt;p&gt;这也对应了上面说的  看好与开出是两码事。&lt;/p&gt;
+&lt;p&gt;而更根本的是，你看好的是胆组，而不是单个胆码。&lt;/p&gt;
+&lt;p&gt;所以，如果大家玩胆组，那就用胆组，&lt;/p&gt;
+&lt;p&gt;真要缩注，要么用其它的条件，&lt;/p&gt;
+&lt;p&gt;要么就狠狠的缩注，然后用预期的胆组利润去小小的买入，做锦上添花。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;二：定位选择&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;说定位，其实和从胆码里挑胆的性质相同。&lt;/p&gt;
+&lt;p&gt;很多朋友玩定位，要么就是从五星定毒胆，然后去筛选 234星的位置。&lt;/p&gt;
+&lt;p&gt;或者说  选一个胆组，去定万千百十个的位置。&lt;/p&gt;
+&lt;p&gt;那么结果就很简单了，就是 五星定的胆或者胆组 中了，但是偏偏 自己选定的那个位置遗漏了。&lt;/p&gt;
+&lt;p&gt;这种现象很多朋友称之为偏位。&lt;/p&gt;
+&lt;p&gt;其实细细思考，偏位是必然的。&lt;/p&gt;
+&lt;p&gt;因为大家一开始定的就是大范围的五星。&lt;/p&gt;
+&lt;p&gt;而五星包含了万千百十个五个位置，任二任三十个位置，任四5个位置。&lt;/p&gt;
+&lt;p&gt;也就是说，选定的胆码  有可能开在1-5个位置上，也有可能只开一个位置。&lt;/p&gt;
+&lt;p&gt;那么结果就是  有可能有1-4个位置 不开。&lt;/p&gt;
+&lt;p&gt;如果说 选定的那组胆码，进行了 冷热的转换，也就是俗称的号码调整变态期。&lt;/p&gt;
+&lt;p&gt;在大数据下 找了一个很具有迷惑性的位置去进行补位，那就只有靠运气了。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;三：总结&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;无论是偏位还是漏胆。&lt;/p&gt;
+&lt;p&gt;这些现象都很让人上火。并且非常搞心态。&lt;/p&gt;
+&lt;p&gt;所以我个人在选号的过程中是看哪个位置就做哪个位置。&lt;/p&gt;
+&lt;p&gt;选胆组就做胆组。&lt;/p&gt;
+&lt;p&gt;然后在这基础上，去定位置选胆码，缩小注数，用预期的利润拿出一小部分去碰碰运气。&lt;/p&gt;
+&lt;p&gt;拿住确定的，杜绝不确定的，稳中求胜，徐徐图之。&lt;/p&gt;
+&lt;p&gt;彩票技术交流圈 防失联，务必添加&lt;/p&gt;
+&lt;p&gt;九帝：&lt;br&gt;
+QQ：1601708361&lt;br&gt;
+skype：d9516888@outlook.com&lt;br&gt;
+68chat：89gw8l8l66&lt;/p&gt;
+&lt;p&gt;用途：&lt;br&gt;
+skype：防失联与业务咨询&lt;br&gt;
+68chat：业务执行圈子技术交流群&lt;/p&gt;
+&lt;p&gt;软件下载&lt;br&gt;
+skype官网：shiguangpu.com&lt;br&gt;
+68chat官网：68chat.org&lt;/p&gt;
+">彩票技术，关于胆码挑选和定位的经验。</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" href="https://feng888777.github.io/post/cai-piao-ji-zhu-gu-ding-te-shu-da-di-wan-fa/"" data-c="
+          &lt;p&gt;视频讲解：&lt;br&gt;
+https://www.bilibili.com/video/BV1zt421a7fQ/&lt;/p&gt;
+&lt;p&gt;固定大底：&lt;br&gt;
+把不常开的特殊形态条件排除掉，形成的大底。一般在 50%-80%左右&lt;/p&gt;
+&lt;p&gt;特征：&lt;br&gt;
+大底开出的概率很高。因为特殊形态的概率本身就比较小。&lt;/p&gt;
+&lt;p&gt;玩法：&lt;br&gt;
+若是大底在50%左右的概率，那么可以直接观察正反集趋势， 伺机切入。&lt;br&gt;
+若是大底在70%左右的概率，那么可以在大底趋势平稳时，增加条件缩水。进行切入。&lt;/p&gt;
+&lt;p&gt;优劣：&lt;br&gt;
+优势：切入机会比较多，&lt;br&gt;
+劣势：固定号需要等待趋势。且循环周期的存在导致持续性弱。&lt;/p&gt;
+&lt;p&gt;彩票技术交流圈 防失联，务必添加&lt;/p&gt;
+&lt;p&gt;九帝：&lt;br&gt;
+QQ：1601708361&lt;br&gt;
+skype：d9516888@outlook.com&lt;br&gt;
+68chat：89gw8l8l66&lt;/p&gt;
+&lt;p&gt;用途：&lt;br&gt;
+skype：防失联与业务咨询&lt;br&gt;
+68chat：业务执行圈子技术交流群&lt;/p&gt;
+&lt;p&gt;软件下载&lt;br&gt;
+skype官网：shiguangpu.com&lt;br&gt;
+68chat官网：68chat.org&lt;/p&gt;
+">彩票技术，固定特殊大底玩法</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" href="https://feng888777.github.io/post/cai-piao-ji-zhu-qu-shi-ruan-jian-shi-yong-ding-wei-sou-suo/"" data-c="
+          &lt;p&gt;使用：&lt;br&gt;
+&lt;img src=&#34;https://feng888777.github.io/post-images/1709223224351.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;p&gt;视频讲解：&lt;br&gt;
+https://www.bilibili.com/video/BV1HC4y1r7Vz/&lt;/p&gt;
+&lt;p&gt;定多个位置的多个胆码&lt;/p&gt;
+&lt;p&gt;举例：三星 8  8  8   512注&lt;/p&gt;
+&lt;p&gt;定位搜索以搜索为基础。&lt;/p&gt;
+&lt;p&gt;建议：&lt;/p&gt;
+&lt;p&gt;定位胆的连开与连挂周期并不太长。&lt;br&gt;
+所以偏态玩法的阈值不能设置太高，不然有时候会搜索不出图形。&lt;/p&gt;
+&lt;p&gt;定位搜索出来的图形不能直接用。需要理智分析。&lt;br&gt;
+且 定位本身的持续性 比较短。号码不能一直用。&lt;/p&gt;
+&lt;p&gt;彩票技术交流圈 防失联，务必添加&lt;/p&gt;
+&lt;p&gt;九帝：&lt;br&gt;
+QQ：1601708361&lt;br&gt;
+skype：d9516888@outlook.com&lt;br&gt;
+68chat：89gw8l8l66&lt;/p&gt;
+&lt;p&gt;用途：&lt;br&gt;
+skype：防失联与业务咨询&lt;br&gt;
+68chat：业务执行圈子技术交流群&lt;/p&gt;
+&lt;p&gt;软件下载&lt;br&gt;
+skype官网：shiguangpu.com&lt;br&gt;
+68chat官网：68chat.org&lt;/p&gt;
+">彩票技术，趋势软件使用，定位搜索</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" href="https://feng888777.github.io/post/cai-piao-ji-zhu-jun-xian-ji-chu-fen-xiang/"" data-c="
+          &lt;h2 id=&#34;九帝公开分享课&#34;&gt;九帝公开分享课&lt;/h2&gt;
+&lt;h1 id=&#34;只讲均线太干自备白开水&#34;&gt;只讲均线，太干，自备白开水。&lt;/h1&gt;
+&lt;p&gt;（文章底部找我交流）&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;联系方式&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;彩票技术交流圈 防失联，务必添加&lt;/p&gt;
+&lt;p&gt;九帝：&lt;br&gt;
+QQ：1601708361&lt;br&gt;
+skype：d9516888@outlook.com&lt;br&gt;
+68chat：89gw8l8l66&lt;/p&gt;
+&lt;p&gt;用途：&lt;br&gt;
+skype：防失联与业务咨询&lt;br&gt;
+68chat：业务执行圈子技术交流群&lt;/p&gt;
+&lt;p&gt;软件下载&lt;br&gt;
+skype官网：shiguangpu.com&lt;br&gt;
+68chat官网：68chat.org&lt;/p&gt;
+&lt;h3 id=&#34;一了解均线与选择均线&#34;&gt;一：了解均线与选择均线&lt;/h3&gt;
+&lt;p&gt;均线是什么：&lt;br&gt;
+移动平均线，简称均线，它是将某一段时间内的平均值连成曲线，用于显示&lt;br&gt;
+历史波动情况，进而反映未来发展趋势的技术分析方法。&lt;br&gt;
+MA与EMA的区别：EMA进行了加权处理，线形整体比较光滑。&lt;br&gt;
+&lt;em&gt;MA相对于K线的变化，延迟太高&lt;/em&gt;。&lt;/p&gt;
+&lt;p&gt;为什么选择均线：&lt;br&gt;
+从指标的衍生关系中，可以看到，均线是第一层级的衍生指标。那么在其它的指标特性都可以通过均线去进行表达。比如：布林的中轨可以用相近周期的均线去进行代替。macd的短长周期的金叉可以通过均线长短周期的金叉去进行代替。一通百通。&lt;br&gt;
+指标的衍生关系：&lt;br&gt;
+&lt;img src=&#34;https://feng888777.github.io/post-images/1709137688217.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;span style=&#34;background:#d4b106&#34;&gt;&lt;font color=&#34;#00b050&#34;&gt;九帝QQ：1601708361&lt;/font&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&#34;二均线的运用方法&#34;&gt;二：均线的运用方法&lt;/h3&gt;
+&lt;p&gt;均线是具有范围的方向性指标。方向向上代表趋势走热，方向向下代表趋势走冷。&lt;br&gt;
+但是注意，热的号码不一定必开，冷的号码不一定不开。实际选择需要参考个人的打号方式。&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;均线核心&lt;/em&gt;：&lt;br&gt;
+长期均线界定趋势优劣，喜欢打热号或者喜欢打遗漏回补按需选择。&lt;br&gt;
+中期均线观察趋势方向，无论什么打法，中期均线必须是方向向上的。&lt;br&gt;
+短期均线参考K线上下，短期均线比较灵敏，可以看出号码的活跃性。&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;均线通用的法则&lt;/em&gt;：&lt;br&gt;
+均线方向持续向上代表趋势持续走热，但是需要规避顶部转向热转冷。&lt;br&gt;
+均线方向持续向下，代表趋势持续走冷，但是发生转向代表冷转热。&lt;br&gt;
+均线首要的是参考方向，不要一味的去参考金叉。&lt;br&gt;
+（K线，均线，持续性 ，震荡性  二元对立组成最终的趋势形态。&lt;br&gt;
+遵从指标本身的（方向）属性，而不是盲目的遵从（金叉）现象。）&lt;/p&gt;
+&lt;p&gt;而金叉又分为：短期与中期均线金叉，短期与长期均线金叉，中期与长期均线金叉。&lt;br&gt;
+下面介绍三个在趋势判定和介入中，需要注意的金叉选择。&lt;/p&gt;
+&lt;p&gt;如下图：&lt;br&gt;
+&lt;em&gt;红色箭头区域&lt;/em&gt;：&lt;br&gt;
+在长期均线方向持续向下的过程中，趋势的持续性比较弱。此时，短中期均线金叉之后可能就会死掉。最多能持续到短期均线与长期均线触碰。&lt;br&gt;
+&lt;em&gt;黄色箭头区域&lt;/em&gt;：&lt;br&gt;
+在长期均线持续下降途中突然转向向上，或者是从持续上升的方向转向向下一段时间后在半空转向向上， 这种趋势我称之为遗漏缓冲。而这种趋势的现象就是垂死挣扎。它的持续力度也是比较弱的。可以持续到  短中期均线金叉后，到短长期均线金叉 ，最多持续到 中期均线与长期均线触碰。&lt;br&gt;
+&lt;em&gt;绿色箭头区域&lt;/em&gt;：&lt;br&gt;
+在长期均线从持续向下成功转向为持续向上的时候。 此时前方有长期均线的底部筑底为好。趋势的方向发生了完全改变。因此趋势的持续性比较强。在短中期均线金叉后，到短长期均线金叉，再到中长期均线金叉之后，仍然可以持续一段时间。&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://feng888777.github.io/post-images/1709137727113.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;span style=&#34;background:#d4b106&#34;&gt;&lt;font color=&#34;#00b050&#34;&gt;九帝QQ：1601708361&lt;/font&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;均线的支撑与压制&lt;/em&gt;：&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;均线对K线是没有支撑和压制作用的&lt;/em&gt;，但是在均线向上的时候可以考虑K线的支撑，在向下的时候可以考虑K线的压制。 如果K线没有相应的支撑和压制，那么在K线与均线进行交叉的瞬间，无论是向上突破还是向下跌破，都需要谨慎。等待完全上穿后的上升回踩和完全下降后的转向突破。（可以参考回吸高度）&lt;/p&gt;
+&lt;p&gt;实际上，在均线上也是有支撑与压制的。&lt;br&gt;
+而K线本身的支撑与压制也是存在的。&lt;br&gt;
+但是在运用过程中还是有区别的。&lt;br&gt;
+K线的波动比较快，支撑与压制有效性比较短。&lt;br&gt;
+均线的波动比较慢，支撑与压制的有效性比较长。&lt;br&gt;
+因此可以直接用均线的支撑与压制进行趋势的判断，而后在选定区间内通过K线的支撑与压制去进行细化的筛选。&lt;/p&gt;
+&lt;p&gt;如图：&lt;br&gt;
+黄色线条代表K线的支撑与压制。&lt;br&gt;
+绿色箭头代表均线的支撑与压制。&lt;br&gt;
+&lt;img src=&#34;https://feng888777.github.io/post-images/1709137748788.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;均线的高度&lt;/em&gt;：&lt;br&gt;
+均线尽量做低不做高。金叉之前或者刚刚金叉。前提是方向未变。&lt;br&gt;
+均线的高度在正常情况下是无法预判的。但是可以用其它的方法去进行规避高位的风险。大家可以通过其它的指标去进行预判。这里分享一个最简单的方法：&lt;br&gt;
+我们可以通过单个金叉后的遗漏值情况进行规避。如果在前方有K线的压力位的同等高度，出现了遗漏递增，那么这个时候可以停止观望。&lt;br&gt;
+K线的顶部压制，通道线，等。&lt;/p&gt;
+&lt;p&gt;如图：&lt;br&gt;
+红色线条代表高位压力线，黄色圆圈内出现遗漏递增，停止观望。&lt;br&gt;
+&lt;img src=&#34;https://feng888777.github.io/post-images/1709137784680.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;遗漏K的均线&lt;/em&gt;&lt;br&gt;
+遗漏K的均线运用于频率K是相同的。&lt;br&gt;
+但是遗漏K是范围性指标。因此在同样的指标判定法则下，如果遗漏K表现比较优秀。那么此时，可以进行连打。根据遗漏K的选定范围对应的理论周期 去进行多个计划的追击。&lt;/p&gt;
+&lt;p&gt;值得说的是：理论遗漏范围的遗漏K ，概率偏大，都是 60%以上的，因此我们可以直接去看反集遗漏K。一般概率在20-30% 这个概率图形不容易失真，完全可以进行杀号。 比如下图的6.仅仅通过均线的方向去进行判断对比。 频率K三线向上，当前高度并不高，而反集遗漏K当前三线持续向下被压制。 那么根据反集遗漏K30%的概率来看，理论周期是三期。就判定反集遗漏K不会三连开。也就代表 我们可以做三个胆6的0-2计划期去进行追击。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://feng888777.github.io/post-images/1709137811217.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://feng888777.github.io/post-images/1709137824011.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;梳理与建议&#34;&gt;梳理与建议&lt;/h2&gt;
+&lt;p&gt;前边写了这么多均线的用法，当然还有更多的用法等待我们去探寻和发掘。&lt;br&gt;
+最后就给大家梳理和强调一些碎碎念，给出一些实战的建议。&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;顺序与优先级&lt;/em&gt;&lt;br&gt;
+任何指标的运用以及选号的顺序，都需要去确定优先级。&lt;br&gt;
+先确定大趋势是否值得等待。然后再去根据趋势的变化去选择合适的切入时机。&lt;br&gt;
+对于均线而言，优先级当然是   长期均线＞中期均线＞短期均线&lt;br&gt;
+但是要时刻记得，均线的 核心判定是  ：中期均线的方向。&lt;/p&gt;
+&lt;p&gt;而在选号的过程中，大家往往把顺序搞颠倒或者是舍本逐末，因此给大家排序一下优先级。   A＞B＞C&lt;br&gt;
+A：万里眼和多周期可以作为趋势的方向环境预判。&lt;br&gt;
+B：频率K的均线K线状态，决定当前的号能不能选。&lt;br&gt;
+C：遗漏K的均线K线状态。决定号码值不值得打。&lt;/p&gt;
+&lt;h2 id=&#34;font-color00b050九帝qq1601708361font&#34;&gt;&lt;strong&gt;&lt;font color=&#34;#00b050&#34;&gt;&lt;strong&gt;九帝QQ:1601708361&lt;/strong&gt;&lt;/font&gt;&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;实战建议&lt;/em&gt;：&lt;br&gt;
+没有百分百的技术，分析与等待必不可少。&lt;br&gt;
+知道号码什么情况下不开，才知道如何去选择号码。&lt;br&gt;
+不要奢求一抓一大波，只做最稳的点，稳中取胜。&lt;br&gt;
+模棱两可的号和十分勉强的的号，拿捏不住就放掉。&lt;br&gt;
+侥幸心理不可取，一时的贪心会对未来造成必挂的隐患。&lt;/p&gt;
+">彩票技术：均线基础分享</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" href="https://feng888777.github.io/post/cai-piao-ji-zhu-jiao-liu-quan-zi/"" data-c="
+          &lt;p&gt;技术交流，精准计划。&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://feng888777.github.io/post-images/1708965642877.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;彩票技术交流圈 防失联，务必添加&lt;/p&gt;
+&lt;p&gt;九帝：&lt;br&gt;
+QQ：1601708361&lt;br&gt;
+skype：d9516888@outlook.com&lt;br&gt;
+68chat：89gw8l8l66&lt;/p&gt;
+&lt;p&gt;用途：&lt;br&gt;
+skype：防失联与业务咨询&lt;br&gt;
+68chat：业务执行圈子技术交流群&lt;/p&gt;
+&lt;p&gt;软件下载&lt;br&gt;
+skype官网：shiguangpu.com&lt;br&gt;
+68chat官网：68chat.org&lt;/p&gt;
+">彩票技术交流圈子</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" href="https://feng888777.github.io/post/cai-piao-suo-shui-zuo-hao-ruan-jian/"" data-c="
+          &lt;p&gt;多彩全能彩票缩水做号软件&lt;/p&gt;
+&lt;p&gt;https://www.lanzoub.com/iZrq91ql2ctc&lt;br&gt;
+密码:4u0e&lt;/p&gt;
+&lt;p&gt;彩票技术交流圈 防失联，务必添加&lt;/p&gt;
+&lt;p&gt;九帝：&lt;br&gt;
+QQ：1601708361&lt;br&gt;
+skype：d9516888@outlook.com&lt;br&gt;
+68chat：89gw8l8l66&lt;/p&gt;
+&lt;p&gt;用途：&lt;br&gt;
+skype：防失联与业务咨询&lt;br&gt;
+68chat：业务执行圈子技术交流群&lt;/p&gt;
+&lt;p&gt;软件下载&lt;br&gt;
+skype官网：shiguangpu.com&lt;br&gt;
+68chat官网：68chat.org&lt;/p&gt;
+">彩票缩水做号软件</a>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<script>
+  // var escape = "[{&#34;content&#34;:&#34;&lt;p&gt;彩票技术，杀号，还讲杀号。遗漏K辅助杀号。&lt;br&gt;\n&lt;img src=\&#34;https://feng888777.github.io/post-images/1710519428034.png\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;以下讲解均为个人角度理解。不一定完全对，理性参考。&lt;br&gt;\n免费分享，未必适合每个人，只放框架引发思考，抛砖引玉，细节自己探究。&lt;br&gt;\n非大善人，非救世主。拒绝喷子。（&lt;mark&gt;滚滚滚滚滚滚滚滚滚，永久拉黑&lt;/mark&gt;）&lt;/em&gt;&lt;/p&gt;\n&lt;p&gt;遗漏K辅助杀号：&lt;br&gt;\n遗漏K代表：带遗漏范围的K线，遗漏范围的两面性表达。&lt;br&gt;\n遗漏K的特性：呈阶段性区间排列，在上则上，在下则下。&lt;/p&gt;\n&lt;p&gt;用法：&lt;br&gt;\n若是理论遗漏K呈现阶段性位于下轨空间，且整体趋势下降被压制，则频率K可以放心杀号。&lt;br&gt;\n需要预防，理论遗漏K与频率K的底背离产生。&lt;/p&gt;\n&lt;p&gt;注意：&lt;br&gt;\n杀号的核心依旧是频率K跌破支撑。&lt;br&gt;\n在小于10%的概率杀号中，频率K单周期表现不明显，可以放大周期，参考遗漏K。&lt;/p&gt;\n&lt;p&gt;彩票技术交流圈 防失联，务必添加&lt;/p&gt;\n&lt;p&gt;青羽：&lt;br&gt;\nQQ：1601708361&lt;br&gt;\nskype：d9516888@outlook.com&lt;br&gt;\n68chat：89gw8l8l66&lt;/p&gt;\n&lt;p&gt;用途：&lt;br&gt;\nskype：防失联与业务咨询&lt;br&gt;\n68chat：业务执行圈子技术交流群&lt;/p&gt;\n&lt;p&gt;软件下载&lt;br&gt;\nskype官网：shiguangpu.com&lt;br&gt;\n68chat官网：68chat.org&lt;/p&gt;\n&#34;,&#34;fileName&#34;:&#34;cai-piao-ji-zhu-sha-hao-huan-jiang-sha-hao-yi-lou-k-fu-zhu-sha-hao&#34;,&#34;abstract&#34;:&#34;&#34;,&#34;title&#34;:&#34;彩票技术，杀号，还讲杀号。遗漏K辅助杀号。&#34;,&#34;tags&#34;:[{&#34;name&#34;:&#34;彩票技术&#34;,&#34;slug&#34;:&#34;ELWsBxdqW&#34;,&#34;used&#34;:true,&#34;link&#34;:&#34;https://feng888777.github.io/tag/ELWsBxdqW/&#34;}],&#34;date&#34;:&#34;2024-03-16 00:15:50&#34;,&#34;dateFormat&#34;:&#34;2024-03-16&#34;,&#34;feature&#34;:&#34;&#34;,&#34;link&#34;:&#34;https://feng888777.github.io/post/cai-piao-ji-zhu-sha-hao-huan-jiang-sha-hao-yi-lou-k-fu-zhu-sha-hao/&#34;,&#34;hideInList&#34;:false,&#34;isTop&#34;:false,&#34;stats&#34;:{&#34;text&#34;:&#34;2 min read&#34;,&#34;time&#34;:67000,&#34;words&#34;:313,&#34;minutes&#34;:2},&#34;description&#34;:&#34;彩票技术，杀号，还讲杀号。遗漏K辅助杀号。\n\n以下讲解均为个人角度理解。不一定完全对，理性参考。\n免费分享，未必适合每个人，只放框架引发思考，抛砖引玉，细节自己探究。\n非大善人，非救世主。拒绝喷子。（滚滚滚滚滚滚滚滚滚，永久拉黑）\n遗漏K辅...&#34;,&#34;toc&#34;:&#34;&#34;},{&#34;content&#34;:&#34;&lt;p&gt;彩票技术，杀号，再讲指标杀号。&lt;br&gt;\n&lt;img src=\&#34;https://feng888777.github.io/post-images/1710427596581.png\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;/p&gt;\n&lt;p&gt;&lt;mark&gt;杀号类型&lt;/mark&gt;：&lt;br&gt;\n一：断连开，（断连续0遗漏开出）&lt;br&gt;\n1.趋势顶部，无上升空间，&lt;br&gt;\n2.跌破回抽，被压制无法突破更高。&lt;br&gt;\n不建议选择。&lt;/p&gt;\n&lt;p&gt;二：杀大遗漏。（超出理论遗漏后继续遗漏）&lt;br&gt;\n高位趋势跌破支撑后持续遗漏。&lt;br&gt;\n主要选择。&lt;/p&gt;\n&lt;p&gt;指标辅助杀号：（杀号范围）&lt;br&gt;\n1.跌破支撑为核心&lt;br&gt;\n2.bull三轨下降，特别是中轨。次之K线距离bull下轨有距离。&lt;br&gt;\n3.macd下穿，且不形成底背离。&lt;/p&gt;\n&lt;p&gt;彩票技术交流圈 防失联，务必添加&lt;/p&gt;\n&lt;p&gt;九帝：&lt;br&gt;\nQQ：1601708361&lt;br&gt;\nskype：d9516888@outlook.com&lt;br&gt;\n68chat：89gw8l8l66&lt;/p&gt;\n&lt;p&gt;用途：&lt;br&gt;\nskype：防失联与业务咨询&lt;br&gt;\n68chat：业务执行圈子技术交流群&lt;/p&gt;\n&lt;p&gt;软件下载&lt;br&gt;\nskype官网：shiguangpu.com&lt;br&gt;\n68chat官网：68chat.org&lt;/p&gt;\n&#34;,&#34;fileName&#34;:&#34;cai-piao-ji-zhu-sha-hao-zai-jiang-zhi-biao-sha-hao&#34;,&#34;abstract&#34;:&#34;&#34;,&#34;title&#34;:&#34;彩票技术，杀号，再讲指标杀号。&#34;,&#34;tags&#34;:[],&#34;date&#34;:&#34;2024-03-14 22:45:45&#34;,&#34;dateFormat&#34;:&#34;2024-03-14&#34;,&#34;feature&#34;:&#34;&#34;,&#34;link&#34;:&#34;https://feng888777.github.io/post/cai-piao-ji-zhu-sha-hao-zai-jiang-zhi-biao-sha-hao/&#34;,&#34;hideInList&#34;:false,&#34;isTop&#34;:false,&#34;stats&#34;:{&#34;text&#34;:&#34;1 min read&#34;,&#34;time&#34;:44000,&#34;words&#34;:202,&#34;minutes&#34;:1},&#34;description&#34;:&#34;彩票技术，杀号，再讲指标杀号。\n\n杀号类型：\n一：断连开，（断连续0遗漏开出）\n1.趋势顶部，无上升空间，\n2.跌破回抽，被压制无法突破更高。\n不建议选择。\n二：杀大遗漏。（超出理论遗漏后继续遗漏）\n高位趋势跌破支撑后持续遗漏。\n主要选择。...&#34;,&#34;toc&#34;:&#34;&#34;},{&#34;content&#34;:&#34;&lt;p&gt;彩票技术，手机版彩票缩水做号软件。&lt;br&gt;\n&lt;img src=\&#34;https://feng888777.github.io/post-images/1710346931113.png\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;/p&gt;\n&lt;p&gt;手机版彩票缩水做号软件，一般都比较稀缺。而且功能也相对比较少。&lt;br&gt;\n安卓的还算比较多，苹果就更少了，而且很多问题，爱莫能助。&lt;br&gt;\n一般不建议用手机去做，电脑它不香嘛。。。&lt;br&gt;\n但是好多朋友在找，就分享个自用的。&lt;/p&gt;\n&lt;p&gt;简单功能演示&lt;/p&gt;\n&lt;p&gt;软件获取：&lt;br&gt;\nhttps://www.lanzoub.com/b05f3ysab&lt;br&gt;\n密码:efst&lt;/p&gt;\n&lt;p&gt;彩票技术交流圈 防失联，务必添加&lt;/p&gt;\n&lt;p&gt;九帝：&lt;br&gt;\nQQ：1601708361&lt;br&gt;\nskype：d9516888@outlook.com&lt;br&gt;\n68chat：89gw8l8l66&lt;/p&gt;\n&lt;p&gt;用途：&lt;br&gt;\nskype：防失联与业务咨询&lt;br&gt;\n68chat：业务执行圈子技术交流群&lt;/p&gt;\n&lt;p&gt;软件下载&lt;br&gt;\nskype官网：shiguangpu.com&lt;br&gt;\n68chat官网：68chat.org&lt;/p&gt;\n&#34;,&#34;fileName&#34;:&#34;cai-piao-ji-zhu-shou-ji-ban-cai-piao-suo-shui-zuo-hao-ruan-jian&#34;,&#34;abstract&#34;:&#34;&#34;,&#34;title&#34;:&#34;彩票技术，手机版彩票缩水做号软件。&#34;,&#34;tags&#34;:[{&#34;name&#34;:&#34;彩票缩水做号软件&#34;,&#34;slug&#34;:&#34;F0BcWj6Lq&#34;,&#34;used&#34;:true,&#34;link&#34;:&#34;https://feng888777.github.io/tag/F0BcWj6Lq/&#34;}],&#34;date&#34;:&#34;2024-03-14 00:21:53&#34;,&#34;dateFormat&#34;:&#34;2024-03-14&#34;,&#34;feature&#34;:&#34;&#34;,&#34;link&#34;:&#34;https://feng888777.github.io/post/cai-piao-ji-zhu-shou-ji-ban-cai-piao-suo-shui-zuo-hao-ruan-jian/&#34;,&#34;hideInList&#34;:false,&#34;isTop&#34;:false,&#34;stats&#34;:{&#34;text&#34;:&#34;1 min read&#34;,&#34;time&#34;:39000,&#34;words&#34;:177,&#34;minutes&#34;:1},&#34;description&#34;:&#34;彩票技术，手机版彩票缩水做号软件。\n\n手机版彩票缩水做号软件，一般都比较稀缺。而且功能也相对比较少。\n安卓的还算比较多，苹果就更少了，而且很多问题，爱莫能助。\n一般不建议用手机去做，电脑它不香嘛。。。\n但是好多朋友在找，就分享个自用的。\n简...&#34;,&#34;toc&#34;:&#34;&#34;},{&#34;content&#34;:&#34;&lt;figure data-type=\&#34;image\&#34; tabindex=\&#34;1\&#34;&gt;&lt;img src=\&#34;https://feng888777.github.io/post-images/1710261706840.png\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;/figure&gt;\n&lt;p&gt;视频讲解：&lt;br&gt;\nhttps://www.bilibili.com/video/BV1dc411e7d5/&lt;/p&gt;\n&lt;p&gt;拼接：&lt;br&gt;\n定位，二星，三星，四星，五星，&lt;br&gt;\n从低向高拼接。&lt;/p&gt;\n&lt;p&gt;现象：&lt;br&gt;\n单个位置比较多的注数&lt;br&gt;\n拼接向更高星级后，&lt;br&gt;\n注数会降低。&lt;/p&gt;\n&lt;p&gt;优点：&lt;br&gt;\n避免   选低概率号码准确率低的现象。&lt;br&gt;\n提升选号速度。&lt;/p&gt;\n&lt;p&gt;缺点：&lt;br&gt;\n多个位置由于都有周期的存在，可能会不同出，导致拼接后号码挂掉。&lt;/p&gt;\n&lt;p&gt;建议：&lt;br&gt;\n拼接后概率变化比较大，可以去分析拼接后号码的趋势，伺机切入。&lt;/p&gt;\n&lt;p&gt;彩票技术交流圈 防失联，务必添加&lt;/p&gt;\n&lt;p&gt;九帝：&lt;br&gt;\nQQ：1601708361&lt;br&gt;\nskype：d9516888@outlook.com&lt;br&gt;\n68chat：89gw8l8l66&lt;/p&gt;\n&lt;p&gt;用途：&lt;br&gt;\nskype：防失联与业务咨询&lt;br&gt;\n68chat：业务执行圈子技术交流群&lt;/p&gt;\n&lt;p&gt;软件下载&lt;br&gt;\nskype官网：shiguangpu.com&lt;br&gt;\n68chat官网：68chat.org&lt;/p&gt;\n&#34;,&#34;fileName&#34;:&#34;cai-piao-ji-zhu-wan-fa-fen-xiang-pin-jie-wan-fa&#34;,&#34;abstract&#34;:&#34;&#34;,&#34;title&#34;:&#34;彩票技术，玩法分享，拼接玩法&#34;,&#34;tags&#34;:[],&#34;date&#34;:&#34;2024-03-13 00:41:35&#34;,&#34;dateFormat&#34;:&#34;2024-03-13&#34;,&#34;feature&#34;:&#34;&#34;,&#34;link&#34;:&#34;https://feng888777.github.io/post/cai-piao-ji-zhu-wan-fa-fen-xiang-pin-jie-wan-fa/&#34;,&#34;hideInList&#34;:false,&#34;isTop&#34;:false,&#34;stats&#34;:{&#34;text&#34;:&#34;1 min read&#34;,&#34;time&#34;:43000,&#34;words&#34;:196,&#34;minutes&#34;:1},&#34;description&#34;:&#34;\n视频讲解：\nhttps://www.bilibili.com/video/BV1dc411e7d5/\n拼接：\n定位，二星，三星，四星，五星，\n从低向高拼接。\n现象：\n单个位置比较多的注数\n拼接向更高星级后，\n注数会降低。\n优点：\n避免  ...&#34;,&#34;toc&#34;:&#34;&#34;},{&#34;content&#34;:&#34;&lt;figure data-type=\&#34;image\&#34; tabindex=\&#34;1\&#34;&gt;&lt;img src=\&#34;https://feng888777.github.io/post-images/1710168483589.png\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;/figure&gt;\n&lt;p&gt;趋势变速线是用来做未来趋势判定的。&lt;/p&gt;\n&lt;p&gt;而趋势变速线分为两种，一种是下降变速线，一种是上升变速线。&lt;br&gt;\n下降变速线测上升，上升变速线测下降。&lt;/p&gt;\n&lt;p&gt;下降变速线，产生在持续下降的趋势转向向上的过程中。&lt;br&gt;\n以前方最高的趋势顶点作为原点，向后连接趋势的顶点，形成高位压力线。&lt;br&gt;\n一旦趋势突破了三根下降的高位压力线，且趋势底部在持续抬高，那么判定未来的趋势方向持续向上。&lt;/p&gt;\n&lt;p&gt;上升变速线，产生在持续向上的趋势中。&lt;br&gt;\n以前方最低的趋势低点为原点，向后连接趋势低点。形成底部支撑线。&lt;br&gt;\n一旦后面的趋势跌破了两根 底部支撑线，并且高位产生明显的持续走平或者转向向下，那么判定未来的趋势方向持续向下。&lt;/p&gt;\n&lt;p&gt;下降变速线，测出来上升的趋势后，可以进行择机切入。&lt;br&gt;\n而在切入的过程中，也需要用上升变速线去测当前趋势是否将要转向向下。&lt;br&gt;\n两者相辅相成，可能会减少出手次数，但会提高命中精度。&lt;/p&gt;\n&lt;p&gt;彩票技术交流圈 防失联，务必添加&lt;/p&gt;\n&lt;p&gt;九帝：&lt;br&gt;\nQQ：1601708361&lt;br&gt;\nskype：d9516888@outlook.com&lt;br&gt;\n68chat：89gw8l8l66&lt;/p&gt;\n&lt;p&gt;用途：&lt;br&gt;\nskype：防失联与业务咨询&lt;br&gt;\n68chat：业务执行圈子技术交流群&lt;/p&gt;\n&lt;p&gt;软件下载&lt;br&gt;\nskype官网：shiguangpu.com&lt;br&gt;\n68chat官网：68chat.org&lt;/p&gt;\n&#34;,&#34;fileName&#34;:&#34;cai-piao-ji-zhu-qi-miao-qu-shi-fen-xi-qu-shi-bian-su-xian&#34;,&#34;abstract&#34;:&#34;&#34;,&#34;title&#34;:&#34;彩票技术，奇妙趋势分析，趋势变速线&#34;,&#34;tags&#34;:[{&#34;name&#34;:&#34;彩票技术&#34;,&#34;slug&#34;:&#34;ELWsBxdqW&#34;,&#34;used&#34;:true,&#34;link&#34;:&#34;https://feng888777.github.io/tag/ELWsBxdqW/&#34;}],&#34;date&#34;:&#34;2024-03-11 22:47:40&#34;,&#34;dateFormat&#34;:&#34;2024-03-11&#34;,&#34;feature&#34;:&#34;&#34;,&#34;link&#34;:&#34;https://feng888777.github.io/post/cai-piao-ji-zhu-qi-miao-qu-shi-fen-xi-qu-shi-bian-su-xian/&#34;,&#34;hideInList&#34;:false,&#34;isTop&#34;:false,&#34;stats&#34;:{&#34;text&#34;:&#34;2 min read&#34;,&#34;time&#34;:79000,&#34;words&#34;:385,&#34;minutes&#34;:2},&#34;description&#34;:&#34;\n趋势变速线是用来做未来趋势判定的。\n而趋势变速线分为两种，一种是下降变速线，一种是上升变速线。\n下降变速线测上升，上升变速线测下降。\n下降变速线，产生在持续下降的趋势转向向上的过程中。\n以前方最高的趋势顶点作为原点，向后连接趋势的顶点，形...&#34;,&#34;toc&#34;:&#34;&#34;},{&#34;content&#34;:&#34;&lt;p&gt;&lt;img src=\&#34;https://feng888777.github.io/post-images/1710087545366.png\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n震荡 ，压缩 ：趋势的波动。&lt;/p&gt;\n&lt;p&gt;视频讲解&lt;br&gt;\nhttps://www.bilibili.com/video/BV1um411o7sg/&lt;/p&gt;\n&lt;p&gt;震荡趋势：&lt;br&gt;\n趋势波动很大，无论是开出与遗漏，方向性明显，持续性也很明显。&lt;br&gt;\n直观的表现就是bull的宽度比较宽。&lt;br&gt;\n活趋势。&lt;/p&gt;\n&lt;p&gt;趋势压缩：&lt;br&gt;\n趋势的波动很小。开出与遗漏的持续时间很短。方向性不确定。盘整。&lt;br&gt;\n直观的表现就是bull的宽度非常窄。&lt;br&gt;\n死趋势。&lt;/p&gt;\n&lt;p&gt;选择建议：&lt;br&gt;\n宁等活趋势的遗漏，也不做死趋势的连开。&lt;br&gt;\n死趋势，再好，其开出空间是有限的。&lt;br&gt;\n活趋势，再垃圾，其未来的开出预期是良好的。&lt;/p&gt;\n&lt;p&gt;彩票技术交流圈 防失联，务必添加&lt;/p&gt;\n&lt;p&gt;九帝：&lt;br&gt;\nQQ：1601708361&lt;br&gt;\nskype：d9516888@outlook.com&lt;br&gt;\n68chat：89gw8l8l66&lt;/p&gt;\n&lt;p&gt;用途：&lt;br&gt;\nskype：防失联与业务咨询&lt;br&gt;\n68chat：业务执行圈子技术交流群&lt;/p&gt;\n&lt;p&gt;软件下载&lt;br&gt;\nskype官网：shiguangpu.com&lt;br&gt;\n68chat官网：68chat.org&lt;/p&gt;\n&#34;,&#34;fileName&#34;:&#34;cai-piao-ji-zhu-qian-tan-qu-shi-qu-shi-de-zhen-dang-yu-ya-suo&#34;,&#34;abstract&#34;:&#34;&#34;,&#34;title&#34;:&#34;彩票技术，浅谈趋势，趋势的震荡与压缩。&#34;,&#34;tags&#34;:[{&#34;name&#34;:&#34;彩票技术&#34;,&#34;slug&#34;:&#34;ELWsBxdqW&#34;,&#34;used&#34;:true,&#34;link&#34;:&#34;https://feng888777.github.io/tag/ELWsBxdqW/&#34;}],&#34;date&#34;:&#34;2024-03-11 00:18:39&#34;,&#34;dateFormat&#34;:&#34;2024-03-11&#34;,&#34;feature&#34;:&#34;&#34;,&#34;link&#34;:&#34;https://feng888777.github.io/post/cai-piao-ji-zhu-qian-tan-qu-shi-qu-shi-de-zhen-dang-yu-ya-suo/&#34;,&#34;hideInList&#34;:false,&#34;isTop&#34;:false,&#34;stats&#34;:{&#34;text&#34;:&#34;1 min read&#34;,&#34;time&#34;:49000,&#34;words&#34;:228,&#34;minutes&#34;:1},&#34;description&#34;:&#34;\n震荡 ，压缩 ：趋势的波动。\n视频讲解\nhttps://www.bilibili.com/video/BV1um411o7sg/\n震荡趋势：\n趋势波动很大，无论是开出与遗漏，方向性明显，持续性也很明显。\n直观的表现就是bull的宽度比较宽...&#34;,&#34;toc&#34;:&#34;&#34;},{&#34;content&#34;:&#34;&lt;p&gt;彩票技术，软件使用，遗漏搜索&lt;/p&gt;\n&lt;figure data-type=\&#34;image\&#34; tabindex=\&#34;1\&#34;&gt;&lt;img src=\&#34;https://feng888777.github.io/post-images/1709999842396.png\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;/figure&gt;\n&lt;p&gt;视频讲解：&lt;br&gt;\nhttps://www.bilibili.com/video/BV1Z5411e76U/&lt;/p&gt;\n&lt;p&gt;用法：&lt;br&gt;\n用不同周期中0-99999的遗漏值去控制K线形态。&lt;/p&gt;\n&lt;p&gt;优点：&lt;br&gt;\n比图形搜索中的01代码更灵活。&lt;br&gt;\n可以限定周期内的遗漏范围。&lt;br&gt;\n能限定一个比较大的波波段形态。&lt;/p&gt;\n&lt;p&gt;建议：&lt;br&gt;\n没有万能的参数。&lt;br&gt;\n遗漏搜索出的图形仍然需要理性判断。不能盲目出号。&lt;br&gt;\n可以比较快速的搜索到到自己想要判断的K线形态。&lt;/p&gt;\n&lt;p&gt;彩票技术交流圈 防失联，务必添加&lt;/p&gt;\n&lt;p&gt;九帝：&lt;br&gt;\nQQ：1601708361&lt;br&gt;\nskype：d9516888@outlook.com&lt;br&gt;\n68chat：89gw8l8l66&lt;/p&gt;\n&lt;p&gt;用途：&lt;br&gt;\nskype：防失联与业务咨询&lt;br&gt;\n68chat：业务执行圈子技术交流群&lt;/p&gt;\n&lt;p&gt;软件下载&lt;br&gt;\nskype官网：shiguangpu.com&lt;br&gt;\n68chat官网：68chat.org&lt;/p&gt;\n&#34;,&#34;fileName&#34;:&#34;cai-piao-ji-zhu-ruan-jian-shi-yong-yi-lou-sou-suo&#34;,&#34;abstract&#34;:&#34;&#34;,&#34;title&#34;:&#34;彩票技术，软件使用，遗漏搜索&#34;,&#34;tags&#34;:[],&#34;date&#34;:&#34;2024-03-09 23:56:53&#34;,&#34;dateFormat&#34;:&#34;2024-03-09&#34;,&#34;feature&#34;:&#34;&#34;,&#34;link&#34;:&#34;https://feng888777.github.io/post/cai-piao-ji-zhu-ruan-jian-shi-yong-yi-lou-sou-suo/&#34;,&#34;hideInList&#34;:false,&#34;isTop&#34;:false,&#34;stats&#34;:{&#34;text&#34;:&#34;1 min read&#34;,&#34;time&#34;:43000,&#34;words&#34;:197,&#34;minutes&#34;:1},&#34;description&#34;:&#34;彩票技术，软件使用，遗漏搜索\n\n视频讲解：\nhttps://www.bilibili.com/video/BV1Z5411e76U/\n用法：\n用不同周期中0-99999的遗漏值去控制K线形态。\n优点：\n比图形搜索中的01代码更灵活。\n可以限...&#34;,&#34;toc&#34;:&#34;&#34;},{&#34;content&#34;:&#34;&lt;p&gt;圆顶&lt;/p&gt;\n&lt;figure data-type=\&#34;image\&#34; tabindex=\&#34;1\&#34;&gt;&lt;img src=\&#34;https://feng888777.github.io/post-images/1709913436953.png\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;/figure&gt;\n&lt;p&gt;特征：&lt;/p&gt;\n&lt;p&gt;1、出现在涨势中&lt;/p&gt;\n&lt;p&gt;2、上涨的速度由越来越快逐渐转为缓慢的下沉，最后下跌的速度加快，形成一个圆顶状；&lt;/p&gt;\n&lt;p&gt;3、MACD无明显的特征，一般在顶点时MACD柱状体有走平的几项。有时MACD和K线走势保持同步也呈圆顶状。&lt;/p&gt;\n&lt;p&gt;技术含义：见顶回落，转冷信号。&lt;/p&gt;\n&lt;p&gt;操作建议：玩彩者在下跌速度加快时要果断退出。&lt;/p&gt;\n&lt;p&gt;注：&lt;/p&gt;\n&lt;p&gt;1、圆顶形成的时间越长，下跌的力度就越大，&lt;/p&gt;\n&lt;p&gt;2、圆顶一般无颈线可辨认，（个别例外），&lt;/p&gt;\n&lt;p&gt;3、虽然在下降的过程当中可能会有局部的反弹，但是总体的趋势方向不会变，不会有大的反弹趋势出现，遗漏K的理论周期趋势再加以结合会更有说服力。&lt;/p&gt;\n&lt;p&gt;彩票技术交流圈 防失联，务必添加&lt;/p&gt;\n&lt;p&gt;九帝：&lt;br&gt;\nQQ：1601708361&lt;br&gt;\nskype：d9516888@outlook.com&lt;br&gt;\n68chat：89gw8l8l66&lt;/p&gt;\n&lt;p&gt;用途：&lt;br&gt;\nskype：防失联与业务咨询&lt;br&gt;\n68chat：业务执行圈子技术交流群&lt;/p&gt;\n&lt;p&gt;软件下载&lt;br&gt;\nskype官网：shiguangpu.com&lt;br&gt;\n68chat官网：68chat.org&lt;/p&gt;\n&#34;,&#34;fileName&#34;:&#34;cai-piao-ji-zhu-qi-miao-qu-shi-fen-xi-k-xian-xing-tai-yuan-ding&#34;,&#34;abstract&#34;:&#34;&#34;,&#34;title&#34;:&#34;彩票技术，奇妙趋势分析，K线形态，圆顶&#34;,&#34;tags&#34;:[{&#34;name&#34;:&#34;彩票技术&#34;,&#34;slug&#34;:&#34;ELWsBxdqW&#34;,&#34;used&#34;:true,&#34;link&#34;:&#34;https://feng888777.github.io/tag/ELWsBxdqW/&#34;}],&#34;date&#34;:&#34;2024-03-08 23:56:44&#34;,&#34;dateFormat&#34;:&#34;2024-03-08&#34;,&#34;feature&#34;:&#34;&#34;,&#34;link&#34;:&#34;https://feng888777.github.io/post/cai-piao-ji-zhu-qi-miao-qu-shi-fen-xi-k-xian-xing-tai-yuan-ding/&#34;,&#34;hideInList&#34;:false,&#34;isTop&#34;:false,&#34;stats&#34;:{&#34;text&#34;:&#34;2 min read&#34;,&#34;time&#34;:60000,&#34;words&#34;:278,&#34;minutes&#34;:2},&#34;description&#34;:&#34;圆顶\n\n特征：\n1、出现在涨势中\n2、上涨的速度由越来越快逐渐转为缓慢的下沉，最后下跌的速度加快，形成一个圆顶状；\n3、MACD无明显的特征，一般在顶点时MACD柱状体有走平的几项。有时MACD和K线走势保持同步也呈圆顶状。\n技术含义：见顶...&#34;,&#34;toc&#34;:&#34;&#34;},{&#34;content&#34;:&#34;&lt;p&gt;头肩底&lt;/p&gt;\n&lt;figure data-type=\&#34;image\&#34; tabindex=\&#34;1\&#34;&gt;&lt;img src=\&#34;https://feng888777.github.io/post-images/1709825408291.png\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;/figure&gt;\n&lt;p&gt;特征：&lt;/p&gt;\n&lt;p&gt;1、在跌势中出现；&lt;/p&gt;\n&lt;p&gt;2、有3个低谷，左右两个低谷的高低基本处于同一水平位置上，但当中的&lt;/p&gt;\n&lt;p&gt;低谷的低点明显高于左右两个低谷的低占．&lt;/p&gt;\n&lt;p&gt;3、前两冫欠反弹高点基本相同，最后一冫欠反弹向上突破了前两冫欠反弹高点的&lt;/p&gt;\n&lt;p&gt;连线（俗称颈线），．&#39;并收于其上方方；&lt;/p&gt;\n&lt;p&gt;4、MACD出现极度萎缩后，向上冲破颈线时，MACD显著升高；&lt;/p&gt;\n&lt;p&gt;5、在跌破压力线之后，常常有回抽，在颈线附近止跌回升，从而确认向上&lt;/p&gt;\n&lt;p&gt;突破有效。&lt;/p&gt;\n&lt;p&gt;技术含义：见底回升，上升信号。&lt;/p&gt;\n&lt;p&gt;备注：&lt;/p&gt;\n&lt;p&gt;1、筑底时间越长越有可能产生大涨行情，&lt;/p&gt;\n&lt;p&gt;2、在实际走势中《也可能形成两个右肩、两个左肩，或一个右肩、，两个左&lt;/p&gt;\n&lt;p&gt;肩；或两个右肩、一个左肩的图形。这种变异的头肩底与标准的头肩底技术含&lt;/p&gt;\n&lt;p&gt;义相同。&lt;/p&gt;\n&lt;p&gt;彩票技术交流圈 防失联，务必添加&lt;/p&gt;\n&lt;p&gt;九帝：&lt;br&gt;\nQQ：1601708361&lt;br&gt;\nskype：d9516888@outlook.com&lt;br&gt;\n68chat：89gw8l8l66&lt;/p&gt;\n&lt;p&gt;用途：&lt;br&gt;\nskype：防失联与业务咨询&lt;br&gt;\n68chat：业务执行圈子技术交流群&lt;/p&gt;\n&lt;p&gt;软件下载&lt;br&gt;\nskype官网：shiguangpu.com&lt;br&gt;\n68chat官网：68chat.org&lt;/p&gt;\n&#34;,&#34;fileName&#34;:&#34;cai-piao-ji-zhu-qi-miao-qu-shi-fen-xi-k-xian-qu-shi-xing-tai-tou-jian-di&#34;,&#34;abstract&#34;:&#34;&#34;,&#34;title&#34;:&#34;彩票技术，奇妙趋势分析，K线趋势形态。头肩底&#34;,&#34;tags&#34;:[{&#34;name&#34;:&#34;彩票技术&#34;,&#34;slug&#34;:&#34;ELWsBxdqW&#34;,&#34;used&#34;:true,&#34;link&#34;:&#34;https://feng888777.github.io/tag/ELWsBxdqW/&#34;}],&#34;date&#34;:&#34;2024-03-07 23:28:32&#34;,&#34;dateFormat&#34;:&#34;2024-03-07&#34;,&#34;feature&#34;:&#34;&#34;,&#34;link&#34;:&#34;https://feng888777.github.io/post/cai-piao-ji-zhu-qi-miao-qu-shi-fen-xi-k-xian-qu-shi-xing-tai-tou-jian-di/&#34;,&#34;hideInList&#34;:false,&#34;isTop&#34;:false,&#34;stats&#34;:{&#34;text&#34;:&#34;2 min read&#34;,&#34;time&#34;:67000,&#34;words&#34;:315,&#34;minutes&#34;:2},&#34;description&#34;:&#34;头肩底\n\n特征：\n1、在跌势中出现；\n2、有3个低谷，左右两个低谷的高低基本处于同一水平位置上，但当中的\n低谷的低点明显高于左右两个低谷的低占．\n3、前两冫欠反弹高点基本相同，最后一冫欠反弹向上突破了前两冫欠反弹高点的\n连线（俗称颈线），．...&#34;,&#34;toc&#34;:&#34;&#34;},{&#34;content&#34;:&#34;&lt;p&gt;&lt;img src=\&#34;https://feng888777.github.io/post-images/1709737755451.png\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n趋势的研判，是需要环境的。&lt;br&gt;\n这个环境就是冷和热两种属性。&lt;br&gt;\n趋势的转换也是在冷和热之间进行无限延展变化的。&lt;/p&gt;\n&lt;p&gt;但是在这个过程中，我们不知道 冷可以冷多久，热可以热多久。&lt;br&gt;\n我们看到的趋势是已经形成的。我们需要做的事预判未来的方向。&lt;/p&gt;\n&lt;p&gt;趋势的研判，是分层级的。&lt;br&gt;\n大局观和细微观分别代表趋势大方向的分析，与做切入的具象分析。&lt;br&gt;\n比较大的方向，才叫趋势，这个趋势多表现在多周期，遗漏K，二阶遗漏，等具有范围性和周期拓展性的指标上。&lt;br&gt;\n当前的切入研判，更多的表现在单周期频率K和遗漏图上。&lt;/p&gt;\n&lt;p&gt;为什么要进行趋势研判，而后再做切入？&lt;br&gt;\n我做一个简单的比喻。&lt;br&gt;\n趋势环境代表春夏秋冬。具体切入代表时令的衣着选择。&lt;br&gt;\n就好像冬天严寒，需要穿厚衣服保暖。&lt;br&gt;\n就好像夏天酷暑，需要穿薄衣服纳凉。&lt;/p&gt;\n&lt;p&gt;放到趋势中，可以理解为，&lt;br&gt;\n整体趋势环境走热的时候，我们可以择机多做切入。更容易中出。&lt;br&gt;\n整体趋势环境爆冷的时候，可以做切入的机会少，命中的概率低。&lt;/p&gt;\n&lt;p&gt;彩票技术交流圈 防失联，务必添加&lt;/p&gt;\n&lt;p&gt;九帝：&lt;br&gt;\nQQ：1601708361&lt;br&gt;\nskype：d9516888@outlook.com&lt;br&gt;\n68chat：89gw8l8l66&lt;/p&gt;\n&lt;p&gt;用途：&lt;br&gt;\nskype：防失联与业务咨询&lt;br&gt;\n68chat：业务执行圈子技术交流群&lt;/p&gt;\n&lt;p&gt;软件下载&lt;br&gt;\nskype官网：shiguangpu.com&lt;br&gt;\n68chat官网：68chat.org&lt;/p&gt;\n&#34;,&#34;fileName&#34;:&#34;cai-piao-ji-zhu-qu-shi-huan-jing-jie-xi&#34;,&#34;abstract&#34;:&#34;&#34;,&#34;title&#34;:&#34;彩票技术，趋势环境解析&#34;,&#34;tags&#34;:[{&#34;name&#34;:&#34;彩票技术&#34;,&#34;slug&#34;:&#34;ELWsBxdqW&#34;,&#34;used&#34;:true,&#34;link&#34;:&#34;https://feng888777.github.io/tag/ELWsBxdqW/&#34;}],&#34;date&#34;:&#34;2024-03-06 23:08:59&#34;,&#34;dateFormat&#34;:&#34;2024-03-06&#34;,&#34;feature&#34;:&#34;&#34;,&#34;link&#34;:&#34;https://feng888777.github.io/post/cai-piao-ji-zhu-qu-shi-huan-jing-jie-xi/&#34;,&#34;hideInList&#34;:false,&#34;isTop&#34;:false,&#34;stats&#34;:{&#34;text&#34;:&#34;2 min read&#34;,&#34;time&#34;:84000,&#34;words&#34;:405,&#34;minutes&#34;:2},&#34;description&#34;:&#34;\n趋势的研判，是需要环境的。\n这个环境就是冷和热两种属性。\n趋势的转换也是在冷和热之间进行无限延展变化的。\n但是在这个过程中，我们不知道 冷可以冷多久，热可以热多久。\n我们看到的趋势是已经形成的。我们需要做的事预判未来的方向。\n趋势的研判，...&#34;,&#34;toc&#34;:&#34;&#34;},{&#34;content&#34;:&#34;&lt;p&gt;&lt;img src=\&#34;https://feng888777.github.io/post-images/1709650037757.png\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n顶背离现象&lt;br&gt;\nK线 高点上升&lt;br&gt;\nmacd 高点下降&lt;br&gt;\n背道而驰&lt;/p&gt;\n&lt;p&gt;位置：&lt;br&gt;\n产生在趋势顶部&lt;br&gt;\n上升和下降趋势中都存在（大趋势环境）&lt;/p&gt;\n&lt;p&gt;背离结果：&lt;br&gt;\n顶部压制非常强  未来可能会产生遗漏调整&lt;br&gt;\n遗漏交错  开出不顺畅&lt;/p&gt;\n&lt;p&gt;背离结束：&lt;br&gt;\nmacd顶部突破   K线形成大遗漏   支撑有效&lt;/p&gt;\n&lt;p&gt;背离运用：&lt;br&gt;\n顶背离结束后，突破压制，方向未变 形成支撑，  一波强有力的趋势。&lt;br&gt;\n产生顶背离，压制效果增强，方向转变趋势转冷，   大瀑布下跌&lt;/p&gt;\n&lt;p&gt;彩票技术交流圈 防失联，务必添加&lt;/p&gt;\n&lt;p&gt;九帝：&lt;br&gt;\nQQ：1601708361&lt;br&gt;\nskype：d9516888@outlook.com&lt;br&gt;\n68chat：89gw8l8l66&lt;/p&gt;\n&lt;p&gt;用途：&lt;br&gt;\nskype：防失联与业务咨询&lt;br&gt;\n68chat：业务执行圈子技术交流群&lt;/p&gt;\n&lt;p&gt;软件下载&lt;br&gt;\nskype官网：shiguangpu.com&lt;br&gt;\n68chat官网：68chat.org&lt;/p&gt;\n&#34;,&#34;fileName&#34;:&#34;cai-piao-ji-zhu-ding-bei-chi-xing-tai-dui-qu-shi-de-ying-xiang-yi-ji-yun-yong&#34;,&#34;abstract&#34;:&#34;&#34;,&#34;title&#34;:&#34;彩票技术，顶背离形态对趋势的影响以及运用&#34;,&#34;tags&#34;:[{&#34;name&#34;:&#34;彩票技术&#34;,&#34;slug&#34;:&#34;ELWsBxdqW&#34;,&#34;used&#34;:true,&#34;link&#34;:&#34;https://feng888777.github.io/tag/ELWsBxdqW/&#34;}],&#34;date&#34;:&#34;2024-03-05 22:46:31&#34;,&#34;dateFormat&#34;:&#34;2024-03-05&#34;,&#34;feature&#34;:&#34;&#34;,&#34;link&#34;:&#34;https://feng888777.github.io/post/cai-piao-ji-zhu-ding-bei-chi-xing-tai-dui-qu-shi-de-ying-xiang-yi-ji-yun-yong/&#34;,&#34;hideInList&#34;:false,&#34;isTop&#34;:false,&#34;stats&#34;:{&#34;text&#34;:&#34;1 min read&#34;,&#34;time&#34;:45000,&#34;words&#34;:211,&#34;minutes&#34;:1},&#34;description&#34;:&#34;\n顶背离现象\nK线 高点上升\nmacd 高点下降\n背道而驰\n位置：\n产生在趋势顶部\n上升和下降趋势中都存在（大趋势环境）\n背离结果：\n顶部压制非常强  未来可能会产生遗漏调整\n遗漏交错  开出不顺畅\n背离结束：\nmacd顶部突破   K线形...&#34;,&#34;toc&#34;:&#34;&#34;},{&#34;content&#34;:&#34;&lt;p&gt;彩票技术，趋势选择与等待&lt;/p&gt;\n&lt;figure data-type=\&#34;image\&#34; tabindex=\&#34;1\&#34;&gt;&lt;img src=\&#34;https://feng888777.github.io/post-images/1709566389577.png\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;/figure&gt;\n&lt;p&gt;现象：&lt;br&gt;\n许多朋友打三星组选，要么只打组三 要么只打组六。&lt;br&gt;\n不看趋势，就是一直去做单一形态。经常遇到杀号准确，组选形态不给。&lt;/p&gt;\n&lt;p&gt;梳理：&lt;br&gt;\n组三270注，组六720注。每一个形态都有自身的趋势和反趋势。&lt;br&gt;\n（小建议 ：三星不要杀豹子）&lt;br&gt;\n既然做形态，就要在形态趋势OK的前提下去做。趋势不到很容易条件不容错。&lt;br&gt;\n此为做单一形态，去等待形态趋势。&lt;/p&gt;\n&lt;p&gt;如果是做趋势，那就要去参考组选形态两边的趋势，去确定当前以及未来一段时间之内的主趋势形态。在正确的趋势下做正确的形态。&lt;br&gt;\n此为趋势选择。&lt;/p&gt;\n&lt;p&gt;建议：&lt;br&gt;\n看开奖号码的规律，走势图的规律，以及趋势图，都是在预判未来的形态开出可能性。&lt;br&gt;\n单论趋势，永远预判的是未来的开出可能性，而不是盲目的追热。&lt;br&gt;\n当前热未必一直热或者未必不一直热，当前冷未必一直冷或者未必不一直冷。&lt;/p&gt;\n&lt;p&gt;彩票技术交流圈 防失联，务必添加&lt;/p&gt;\n&lt;p&gt;彩票技术交流圈 防失联，务必添加&lt;/p&gt;\n&lt;p&gt;九帝：&lt;br&gt;\nQQ：1601708361&lt;br&gt;\nskype：d9516888@outlook.com&lt;br&gt;\n68chat：89gw8l8l66&lt;/p&gt;\n&lt;p&gt;用途：&lt;br&gt;\nskype：防失联与业务咨询&lt;br&gt;\n68chat：业务执行圈子技术交流群&lt;/p&gt;\n&lt;p&gt;软件下载&lt;br&gt;\nskype官网：shiguangpu.com&lt;br&gt;\n68chat官网：68chat.org&lt;/p&gt;\n&#34;,&#34;fileName&#34;:&#34;cai-piao-ji-zhu-qu-shi-xuan-ze-yu-deng-dai&#34;,&#34;abstract&#34;:&#34;&#34;,&#34;title&#34;:&#34;彩票技术，趋势选择与等待&#34;,&#34;tags&#34;:[{&#34;name&#34;:&#34;彩票技术&#34;,&#34;slug&#34;:&#34;ELWsBxdqW&#34;,&#34;used&#34;:true,&#34;link&#34;:&#34;https://feng888777.github.io/tag/ELWsBxdqW/&#34;}],&#34;date&#34;:&#34;2024-03-04 23:32:59&#34;,&#34;dateFormat&#34;:&#34;2024-03-04&#34;,&#34;feature&#34;:&#34;&#34;,&#34;link&#34;:&#34;https://feng888777.github.io/post/cai-piao-ji-zhu-qu-shi-xuan-ze-yu-deng-dai/&#34;,&#34;hideInList&#34;:false,&#34;isTop&#34;:false,&#34;stats&#34;:{&#34;text&#34;:&#34;2 min read&#34;,&#34;time&#34;:77000,&#34;words&#34;:373,&#34;minutes&#34;:2},&#34;description&#34;:&#34;彩票技术，趋势选择与等待\n\n现象：\n许多朋友打三星组选，要么只打组三 要么只打组六。\n不看趋势，就是一直去做单一形态。经常遇到杀号准确，组选形态不给。\n梳理：\n组三270注，组六720注。每一个形态都有自身的趋势和反趋势。\n（小建议 ：三星...&#34;,&#34;toc&#34;:&#34;&#34;},{&#34;content&#34;:&#34;&lt;p&gt;彩票技术，无脑选配胆，快速出号，准确率极高。&lt;/p&gt;\n&lt;figure data-type=\&#34;image\&#34; tabindex=\&#34;1\&#34;&gt;&lt;img src=\&#34;https://feng888777.github.io/post-images/1709479362660.png\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;/figure&gt;\n&lt;p&gt;视频讲解 :&lt;br&gt;\nhttps://www.bilibili.com/video/BV1K6421u7PF/&lt;/p&gt;\n&lt;p&gt;大纲&lt;br&gt;\n配胆，概率很高。相当于大底。&lt;br&gt;\n举例：五星1配四   四胆是 92224注。&lt;br&gt;\n大底挂掉是个悲伤的故事，大腿拍肿都没用。&lt;/p&gt;\n&lt;p&gt;选配胆存在的现象&lt;br&gt;\n瞎蒙就能中？认真选反而挂？认真选还真选不出来，很纠结&lt;/p&gt;\n&lt;p&gt;选配胆方法：&lt;br&gt;\n把大底进行胆码排序，取前段或者中段。4-5位。&lt;/p&gt;\n&lt;p&gt;原理：&lt;br&gt;\n大底不管中不中，必然有多个位置是命中的。挂的只是其中的少数量位置，或者是错位。&lt;br&gt;\n那么在大底多个位置中出的情况下进行的胆码排序，其可信度是很高的。&lt;/p&gt;\n&lt;p&gt;彩票技术交流圈 防失联，务必添加&lt;/p&gt;\n&lt;p&gt;九帝：&lt;br&gt;\nQQ：1601708361&lt;br&gt;\nskype：d9516888@outlook.com&lt;br&gt;\n68chat：89gw8l8l66&lt;/p&gt;\n&lt;p&gt;用途：&lt;br&gt;\nskype：防失联与业务咨询&lt;br&gt;\n68chat：业务执行圈子技术交流群&lt;/p&gt;\n&lt;p&gt;软件下载&lt;br&gt;\nskype官网：shiguangpu.com&lt;br&gt;\n68chat官网：68chat.org&lt;/p&gt;\n&#34;,&#34;fileName&#34;:&#34;cai-piao-ji-zhu-wu-nao-xuan-pei-dan-kuai-su-chu-hao-zhun-que-lu-ji-gao&#34;,&#34;abstract&#34;:&#34;&#34;,&#34;title&#34;:&#34;彩票技术，无脑选配胆，快速出号，准确率极高。&#34;,&#34;tags&#34;:[],&#34;date&#34;:&#34;2024-03-03 23:16:54&#34;,&#34;dateFormat&#34;:&#34;2024-03-03&#34;,&#34;feature&#34;:&#34;&#34;,&#34;link&#34;:&#34;https://feng888777.github.io/post/cai-piao-ji-zhu-wu-nao-xuan-pei-dan-kuai-su-chu-hao-zhun-que-lu-ji-gao/&#34;,&#34;hideInList&#34;:false,&#34;isTop&#34;:false,&#34;stats&#34;:{&#34;text&#34;:&#34;1 min read&#34;,&#34;time&#34;:55000,&#34;words&#34;:254,&#34;minutes&#34;:1},&#34;description&#34;:&#34;彩票技术，无脑选配胆，快速出号，准确率极高。\n\n视频讲解 :\nhttps://www.bilibili.com/video/BV1K6421u7PF/\n大纲\n配胆，概率很高。相当于大底。\n举例：五星1配四   四胆是 92224注。\n大底挂...&#34;,&#34;toc&#34;:&#34;&#34;},{&#34;content&#34;:&#34;&lt;p&gt;彩票技术，关于胆码挑选和定位的经验。&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;一：胆码挑选&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;在选择胆码的时候，相信很多朋友习惯于 先划定一个范围 然后慢慢去筛选。&lt;/p&gt;\n&lt;p&gt;比如，用大小单双，或者用012路。看好哪一组再去筛选当组的号。&lt;/p&gt;\n&lt;p&gt;比如，看好1路的号  那么 就从 147里边挑选一个作为主胆。&lt;/p&gt;\n&lt;p&gt;这个方法确实有不错的效果。但是会经常性的出现一些现象。&lt;/p&gt;\n&lt;p&gt;比如看好147，选了1  最后 47都开了 就是不开1。&lt;/p&gt;\n&lt;p&gt;相信很多朋友遇到过这种情况。&lt;/p&gt;\n&lt;p&gt;那么是什么原因导致的呢？&lt;/p&gt;\n&lt;p&gt;我们不妨先思考一个问题。&lt;/p&gt;\n&lt;p&gt;看好的号一定会开出吗？&lt;/p&gt;\n&lt;p&gt;不看好的号一定不开吗？&lt;/p&gt;\n&lt;p&gt;答案当然都是否定的。&lt;/p&gt;\n&lt;p&gt;那么接着说，假定 我们看好的147一定会开。&lt;/p&gt;\n&lt;p&gt;OK ，那我们看好的是 147这个胆组。&lt;/p&gt;\n&lt;p&gt;但是147是由1  4   7 三个胆码组成。&lt;/p&gt;\n&lt;p&gt;也就是说 必然有1到3个号会开出。&lt;/p&gt;\n&lt;p&gt;但是  也有可能只开出一个号。&lt;/p&gt;\n&lt;p&gt;而这三个胆码 有冷有热。&lt;/p&gt;\n&lt;p&gt;接下来就是选择问题。&lt;/p&gt;\n&lt;p&gt;选冷号还是选热号呢？&lt;/p&gt;\n&lt;p&gt;选冷号，如果是持续冷，那就不开。&lt;/p&gt;\n&lt;p&gt;选热号，如果是热到极致，那也不会开。&lt;/p&gt;\n&lt;p&gt;这也对应了上面说的  看好与开出是两码事。&lt;/p&gt;\n&lt;p&gt;而更根本的是，你看好的是胆组，而不是单个胆码。&lt;/p&gt;\n&lt;p&gt;所以，如果大家玩胆组，那就用胆组，&lt;/p&gt;\n&lt;p&gt;真要缩注，要么用其它的条件，&lt;/p&gt;\n&lt;p&gt;要么就狠狠的缩注，然后用预期的胆组利润去小小的买入，做锦上添花。&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;二：定位选择&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;说定位，其实和从胆码里挑胆的性质相同。&lt;/p&gt;\n&lt;p&gt;很多朋友玩定位，要么就是从五星定毒胆，然后去筛选 234星的位置。&lt;/p&gt;\n&lt;p&gt;或者说  选一个胆组，去定万千百十个的位置。&lt;/p&gt;\n&lt;p&gt;那么结果就很简单了，就是 五星定的胆或者胆组 中了，但是偏偏 自己选定的那个位置遗漏了。&lt;/p&gt;\n&lt;p&gt;这种现象很多朋友称之为偏位。&lt;/p&gt;\n&lt;p&gt;其实细细思考，偏位是必然的。&lt;/p&gt;\n&lt;p&gt;因为大家一开始定的就是大范围的五星。&lt;/p&gt;\n&lt;p&gt;而五星包含了万千百十个五个位置，任二任三十个位置，任四5个位置。&lt;/p&gt;\n&lt;p&gt;也就是说，选定的胆码  有可能开在1-5个位置上，也有可能只开一个位置。&lt;/p&gt;\n&lt;p&gt;那么结果就是  有可能有1-4个位置 不开。&lt;/p&gt;\n&lt;p&gt;如果说 选定的那组胆码，进行了 冷热的转换，也就是俗称的号码调整变态期。&lt;/p&gt;\n&lt;p&gt;在大数据下 找了一个很具有迷惑性的位置去进行补位，那就只有靠运气了。&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;三：总结&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;无论是偏位还是漏胆。&lt;/p&gt;\n&lt;p&gt;这些现象都很让人上火。并且非常搞心态。&lt;/p&gt;\n&lt;p&gt;所以我个人在选号的过程中是看哪个位置就做哪个位置。&lt;/p&gt;\n&lt;p&gt;选胆组就做胆组。&lt;/p&gt;\n&lt;p&gt;然后在这基础上，去定位置选胆码，缩小注数，用预期的利润拿出一小部分去碰碰运气。&lt;/p&gt;\n&lt;p&gt;拿住确定的，杜绝不确定的，稳中求胜，徐徐图之。&lt;/p&gt;\n&lt;p&gt;彩票技术交流圈 防失联，务必添加&lt;/p&gt;\n&lt;p&gt;九帝：&lt;br&gt;\nQQ：1601708361&lt;br&gt;\nskype：d9516888@outlook.com&lt;br&gt;\n68chat：89gw8l8l66&lt;/p&gt;\n&lt;p&gt;用途：&lt;br&gt;\nskype：防失联与业务咨询&lt;br&gt;\n68chat：业务执行圈子技术交流群&lt;/p&gt;\n&lt;p&gt;软件下载&lt;br&gt;\nskype官网：shiguangpu.com&lt;br&gt;\n68chat官网：68chat.org&lt;/p&gt;\n&#34;,&#34;fileName&#34;:&#34;cai-piao-ji-zhu-guan-yu-dan-ma-tiao-xuan-he-ding-wei-de-jing-yan&#34;,&#34;abstract&#34;:&#34;&#34;,&#34;title&#34;:&#34;彩票技术，关于胆码挑选和定位的经验。&#34;,&#34;tags&#34;:[{&#34;name&#34;:&#34;彩票技术&#34;,&#34;slug&#34;:&#34;ELWsBxdqW&#34;,&#34;used&#34;:true,&#34;link&#34;:&#34;https://feng888777.github.io/tag/ELWsBxdqW/&#34;}],&#34;date&#34;:&#34;2024-03-02 22:38:06&#34;,&#34;dateFormat&#34;:&#34;2024-03-02&#34;,&#34;feature&#34;:&#34;&#34;,&#34;link&#34;:&#34;https://feng888777.github.io/post/cai-piao-ji-zhu-guan-yu-dan-ma-tiao-xuan-he-ding-wei-de-jing-yan/&#34;,&#34;hideInList&#34;:false,&#34;isTop&#34;:false,&#34;stats&#34;:{&#34;text&#34;:&#34;4 min read&#34;,&#34;time&#34;:183000,&#34;words&#34;:886,&#34;minutes&#34;:4},&#34;description&#34;:&#34;彩票技术，关于胆码挑选和定位的经验。\n一：胆码挑选\n在选择胆码的时候，相信很多朋友习惯于 先划定一个范围 然后慢慢去筛选。\n比如，用大小单双，或者用012路。看好哪一组再去筛选当组的号。\n比如，看好1路的号  那么 就从 147里边挑选一个...&#34;,&#34;toc&#34;:&#34;&#34;},{&#34;content&#34;:&#34;&lt;p&gt;视频讲解：&lt;br&gt;\nhttps://www.bilibili.com/video/BV1zt421a7fQ/&lt;/p&gt;\n&lt;p&gt;固定大底：&lt;br&gt;\n把不常开的特殊形态条件排除掉，形成的大底。一般在 50%-80%左右&lt;/p&gt;\n&lt;p&gt;特征：&lt;br&gt;\n大底开出的概率很高。因为特殊形态的概率本身就比较小。&lt;/p&gt;\n&lt;p&gt;玩法：&lt;br&gt;\n若是大底在50%左右的概率，那么可以直接观察正反集趋势， 伺机切入。&lt;br&gt;\n若是大底在70%左右的概率，那么可以在大底趋势平稳时，增加条件缩水。进行切入。&lt;/p&gt;\n&lt;p&gt;优劣：&lt;br&gt;\n优势：切入机会比较多，&lt;br&gt;\n劣势：固定号需要等待趋势。且循环周期的存在导致持续性弱。&lt;/p&gt;\n&lt;p&gt;彩票技术交流圈 防失联，务必添加&lt;/p&gt;\n&lt;p&gt;九帝：&lt;br&gt;\nQQ：1601708361&lt;br&gt;\nskype：d9516888@outlook.com&lt;br&gt;\n68chat：89gw8l8l66&lt;/p&gt;\n&lt;p&gt;用途：&lt;br&gt;\nskype：防失联与业务咨询&lt;br&gt;\n68chat：业务执行圈子技术交流群&lt;/p&gt;\n&lt;p&gt;软件下载&lt;br&gt;\nskype官网：shiguangpu.com&lt;br&gt;\n68chat官网：68chat.org&lt;/p&gt;\n&#34;,&#34;fileName&#34;:&#34;cai-piao-ji-zhu-gu-ding-te-shu-da-di-wan-fa&#34;,&#34;abstract&#34;:&#34;&#34;,&#34;title&#34;:&#34;彩票技术，固定特殊大底玩法&#34;,&#34;tags&#34;:[{&#34;name&#34;:&#34;彩票技术&#34;,&#34;slug&#34;:&#34;ELWsBxdqW&#34;,&#34;used&#34;:true,&#34;link&#34;:&#34;https://feng888777.github.io/tag/ELWsBxdqW/&#34;}],&#34;date&#34;:&#34;2024-03-01 16:09:34&#34;,&#34;dateFormat&#34;:&#34;2024-03-01&#34;,&#34;feature&#34;:&#34;&#34;,&#34;link&#34;:&#34;https://feng888777.github.io/post/cai-piao-ji-zhu-gu-ding-te-shu-da-di-wan-fa/&#34;,&#34;hideInList&#34;:false,&#34;isTop&#34;:false,&#34;stats&#34;:{&#34;text&#34;:&#34;1 min read&#34;,&#34;time&#34;:49000,&#34;words&#34;:226,&#34;minutes&#34;:1},&#34;description&#34;:&#34;视频讲解：\nhttps://www.bilibili.com/video/BV1zt421a7fQ/\n固定大底：\n把不常开的特殊形态条件排除掉，形成的大底。一般在 50%-80%左右\n特征：\n大底开出的概率很高。因为特殊形态的概率本身就比较...&#34;,&#34;toc&#34;:&#34;&#34;},{&#34;content&#34;:&#34;&lt;p&gt;使用：&lt;br&gt;\n&lt;img src=\&#34;https://feng888777.github.io/post-images/1709223224351.png\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;/p&gt;\n&lt;p&gt;视频讲解：&lt;br&gt;\nhttps://www.bilibili.com/video/BV1HC4y1r7Vz/&lt;/p&gt;\n&lt;p&gt;定多个位置的多个胆码&lt;/p&gt;\n&lt;p&gt;举例：三星 8  8  8   512注&lt;/p&gt;\n&lt;p&gt;定位搜索以搜索为基础。&lt;/p&gt;\n&lt;p&gt;建议：&lt;/p&gt;\n&lt;p&gt;定位胆的连开与连挂周期并不太长。&lt;br&gt;\n所以偏态玩法的阈值不能设置太高，不然有时候会搜索不出图形。&lt;/p&gt;\n&lt;p&gt;定位搜索出来的图形不能直接用。需要理智分析。&lt;br&gt;\n且 定位本身的持续性 比较短。号码不能一直用。&lt;/p&gt;\n&lt;p&gt;彩票技术交流圈 防失联，务必添加&lt;/p&gt;\n&lt;p&gt;九帝：&lt;br&gt;\nQQ：1601708361&lt;br&gt;\nskype：d9516888@outlook.com&lt;br&gt;\n68chat：89gw8l8l66&lt;/p&gt;\n&lt;p&gt;用途：&lt;br&gt;\nskype：防失联与业务咨询&lt;br&gt;\n68chat：业务执行圈子技术交流群&lt;/p&gt;\n&lt;p&gt;软件下载&lt;br&gt;\nskype官网：shiguangpu.com&lt;br&gt;\n68chat官网：68chat.org&lt;/p&gt;\n&#34;,&#34;fileName&#34;:&#34;cai-piao-ji-zhu-qu-shi-ruan-jian-shi-yong-ding-wei-sou-suo&#34;,&#34;abstract&#34;:&#34;&#34;,&#34;title&#34;:&#34;彩票技术，趋势软件使用，定位搜索&#34;,&#34;tags&#34;:[{&#34;name&#34;:&#34;彩票技术&#34;,&#34;slug&#34;:&#34;ELWsBxdqW&#34;,&#34;used&#34;:true,&#34;link&#34;:&#34;https://feng888777.github.io/tag/ELWsBxdqW/&#34;}],&#34;date&#34;:&#34;2024-03-01 00:11:57&#34;,&#34;dateFormat&#34;:&#34;2024-03-01&#34;,&#34;feature&#34;:&#34;&#34;,&#34;link&#34;:&#34;https://feng888777.github.io/post/cai-piao-ji-zhu-qu-shi-ruan-jian-shi-yong-ding-wei-sou-suo/&#34;,&#34;hideInList&#34;:false,&#34;isTop&#34;:false,&#34;stats&#34;:{&#34;text&#34;:&#34;1 min read&#34;,&#34;time&#34;:41000,&#34;words&#34;:185,&#34;minutes&#34;:1},&#34;description&#34;:&#34;使用：\n\n视频讲解：\nhttps://www.bilibili.com/video/BV1HC4y1r7Vz/\n定多个位置的多个胆码\n举例：三星 8  8  8   512注\n定位搜索以搜索为基础。\n建议：\n定位胆的连开与连挂周期并不太长。...&#34;,&#34;toc&#34;:&#34;&#34;},{&#34;content&#34;:&#34;&lt;h2 id=\&#34;九帝公开分享课\&#34;&gt;九帝公开分享课&lt;/h2&gt;\n&lt;h1 id=\&#34;只讲均线太干自备白开水\&#34;&gt;只讲均线，太干，自备白开水。&lt;/h1&gt;\n&lt;p&gt;（文章底部找我交流）&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;联系方式&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;\n&lt;p&gt;彩票技术交流圈 防失联，务必添加&lt;/p&gt;\n&lt;p&gt;九帝：&lt;br&gt;\nQQ：1601708361&lt;br&gt;\nskype：d9516888@outlook.com&lt;br&gt;\n68chat：89gw8l8l66&lt;/p&gt;\n&lt;p&gt;用途：&lt;br&gt;\nskype：防失联与业务咨询&lt;br&gt;\n68chat：业务执行圈子技术交流群&lt;/p&gt;\n&lt;p&gt;软件下载&lt;br&gt;\nskype官网：shiguangpu.com&lt;br&gt;\n68chat官网：68chat.org&lt;/p&gt;\n&lt;h3 id=\&#34;一了解均线与选择均线\&#34;&gt;一：了解均线与选择均线&lt;/h3&gt;\n&lt;p&gt;均线是什么：&lt;br&gt;\n移动平均线，简称均线，它是将某一段时间内的平均值连成曲线，用于显示&lt;br&gt;\n历史波动情况，进而反映未来发展趋势的技术分析方法。&lt;br&gt;\nMA与EMA的区别：EMA进行了加权处理，线形整体比较光滑。&lt;br&gt;\n&lt;em&gt;MA相对于K线的变化，延迟太高&lt;/em&gt;。&lt;/p&gt;\n&lt;p&gt;为什么选择均线：&lt;br&gt;\n从指标的衍生关系中，可以看到，均线是第一层级的衍生指标。那么在其它的指标特性都可以通过均线去进行表达。比如：布林的中轨可以用相近周期的均线去进行代替。macd的短长周期的金叉可以通过均线长短周期的金叉去进行代替。一通百通。&lt;br&gt;\n指标的衍生关系：&lt;br&gt;\n&lt;img src=\&#34;https://feng888777.github.io/post-images/1709137688217.png\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n&lt;span style=\&#34;background:#d4b106\&#34;&gt;&lt;font color=\&#34;#00b050\&#34;&gt;九帝QQ：1601708361&lt;/font&gt;&lt;/span&gt;&lt;/p&gt;\n&lt;h3 id=\&#34;二均线的运用方法\&#34;&gt;二：均线的运用方法&lt;/h3&gt;\n&lt;p&gt;均线是具有范围的方向性指标。方向向上代表趋势走热，方向向下代表趋势走冷。&lt;br&gt;\n但是注意，热的号码不一定必开，冷的号码不一定不开。实际选择需要参考个人的打号方式。&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;均线核心&lt;/em&gt;：&lt;br&gt;\n长期均线界定趋势优劣，喜欢打热号或者喜欢打遗漏回补按需选择。&lt;br&gt;\n中期均线观察趋势方向，无论什么打法，中期均线必须是方向向上的。&lt;br&gt;\n短期均线参考K线上下，短期均线比较灵敏，可以看出号码的活跃性。&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;均线通用的法则&lt;/em&gt;：&lt;br&gt;\n均线方向持续向上代表趋势持续走热，但是需要规避顶部转向热转冷。&lt;br&gt;\n均线方向持续向下，代表趋势持续走冷，但是发生转向代表冷转热。&lt;br&gt;\n均线首要的是参考方向，不要一味的去参考金叉。&lt;br&gt;\n（K线，均线，持续性 ，震荡性  二元对立组成最终的趋势形态。&lt;br&gt;\n遵从指标本身的（方向）属性，而不是盲目的遵从（金叉）现象。）&lt;/p&gt;\n&lt;p&gt;而金叉又分为：短期与中期均线金叉，短期与长期均线金叉，中期与长期均线金叉。&lt;br&gt;\n下面介绍三个在趋势判定和介入中，需要注意的金叉选择。&lt;/p&gt;\n&lt;p&gt;如下图：&lt;br&gt;\n&lt;em&gt;红色箭头区域&lt;/em&gt;：&lt;br&gt;\n在长期均线方向持续向下的过程中，趋势的持续性比较弱。此时，短中期均线金叉之后可能就会死掉。最多能持续到短期均线与长期均线触碰。&lt;br&gt;\n&lt;em&gt;黄色箭头区域&lt;/em&gt;：&lt;br&gt;\n在长期均线持续下降途中突然转向向上，或者是从持续上升的方向转向向下一段时间后在半空转向向上， 这种趋势我称之为遗漏缓冲。而这种趋势的现象就是垂死挣扎。它的持续力度也是比较弱的。可以持续到  短中期均线金叉后，到短长期均线金叉 ，最多持续到 中期均线与长期均线触碰。&lt;br&gt;\n&lt;em&gt;绿色箭头区域&lt;/em&gt;：&lt;br&gt;\n在长期均线从持续向下成功转向为持续向上的时候。 此时前方有长期均线的底部筑底为好。趋势的方向发生了完全改变。因此趋势的持续性比较强。在短中期均线金叉后，到短长期均线金叉，再到中长期均线金叉之后，仍然可以持续一段时间。&lt;/p&gt;\n&lt;figure data-type=\&#34;image\&#34; tabindex=\&#34;1\&#34;&gt;&lt;img src=\&#34;https://feng888777.github.io/post-images/1709137727113.png\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;/figure&gt;\n&lt;p&gt;&lt;span style=\&#34;background:#d4b106\&#34;&gt;&lt;font color=\&#34;#00b050\&#34;&gt;九帝QQ：1601708361&lt;/font&gt;&lt;/span&gt;&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;均线的支撑与压制&lt;/em&gt;：&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;均线对K线是没有支撑和压制作用的&lt;/em&gt;，但是在均线向上的时候可以考虑K线的支撑，在向下的时候可以考虑K线的压制。 如果K线没有相应的支撑和压制，那么在K线与均线进行交叉的瞬间，无论是向上突破还是向下跌破，都需要谨慎。等待完全上穿后的上升回踩和完全下降后的转向突破。（可以参考回吸高度）&lt;/p&gt;\n&lt;p&gt;实际上，在均线上也是有支撑与压制的。&lt;br&gt;\n而K线本身的支撑与压制也是存在的。&lt;br&gt;\n但是在运用过程中还是有区别的。&lt;br&gt;\nK线的波动比较快，支撑与压制有效性比较短。&lt;br&gt;\n均线的波动比较慢，支撑与压制的有效性比较长。&lt;br&gt;\n因此可以直接用均线的支撑与压制进行趋势的判断，而后在选定区间内通过K线的支撑与压制去进行细化的筛选。&lt;/p&gt;\n&lt;p&gt;如图：&lt;br&gt;\n黄色线条代表K线的支撑与压制。&lt;br&gt;\n绿色箭头代表均线的支撑与压制。&lt;br&gt;\n&lt;img src=\&#34;https://feng888777.github.io/post-images/1709137748788.png\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;均线的高度&lt;/em&gt;：&lt;br&gt;\n均线尽量做低不做高。金叉之前或者刚刚金叉。前提是方向未变。&lt;br&gt;\n均线的高度在正常情况下是无法预判的。但是可以用其它的方法去进行规避高位的风险。大家可以通过其它的指标去进行预判。这里分享一个最简单的方法：&lt;br&gt;\n我们可以通过单个金叉后的遗漏值情况进行规避。如果在前方有K线的压力位的同等高度，出现了遗漏递增，那么这个时候可以停止观望。&lt;br&gt;\nK线的顶部压制，通道线，等。&lt;/p&gt;\n&lt;p&gt;如图：&lt;br&gt;\n红色线条代表高位压力线，黄色圆圈内出现遗漏递增，停止观望。&lt;br&gt;\n&lt;img src=\&#34;https://feng888777.github.io/post-images/1709137784680.png\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;遗漏K的均线&lt;/em&gt;&lt;br&gt;\n遗漏K的均线运用于频率K是相同的。&lt;br&gt;\n但是遗漏K是范围性指标。因此在同样的指标判定法则下，如果遗漏K表现比较优秀。那么此时，可以进行连打。根据遗漏K的选定范围对应的理论周期 去进行多个计划的追击。&lt;/p&gt;\n&lt;p&gt;值得说的是：理论遗漏范围的遗漏K ，概率偏大，都是 60%以上的，因此我们可以直接去看反集遗漏K。一般概率在20-30% 这个概率图形不容易失真，完全可以进行杀号。 比如下图的6.仅仅通过均线的方向去进行判断对比。 频率K三线向上，当前高度并不高，而反集遗漏K当前三线持续向下被压制。 那么根据反集遗漏K30%的概率来看，理论周期是三期。就判定反集遗漏K不会三连开。也就代表 我们可以做三个胆6的0-2计划期去进行追击。&lt;/p&gt;\n&lt;p&gt;&lt;img src=\&#34;https://feng888777.github.io/post-images/1709137811217.png\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n&lt;img src=\&#34;https://feng888777.github.io/post-images/1709137824011.png\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;/p&gt;\n&lt;h2 id=\&#34;梳理与建议\&#34;&gt;梳理与建议&lt;/h2&gt;\n&lt;p&gt;前边写了这么多均线的用法，当然还有更多的用法等待我们去探寻和发掘。&lt;br&gt;\n最后就给大家梳理和强调一些碎碎念，给出一些实战的建议。&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;顺序与优先级&lt;/em&gt;&lt;br&gt;\n任何指标的运用以及选号的顺序，都需要去确定优先级。&lt;br&gt;\n先确定大趋势是否值得等待。然后再去根据趋势的变化去选择合适的切入时机。&lt;br&gt;\n对于均线而言，优先级当然是   长期均线＞中期均线＞短期均线&lt;br&gt;\n但是要时刻记得，均线的 核心判定是  ：中期均线的方向。&lt;/p&gt;\n&lt;p&gt;而在选号的过程中，大家往往把顺序搞颠倒或者是舍本逐末，因此给大家排序一下优先级。   A＞B＞C&lt;br&gt;\nA：万里眼和多周期可以作为趋势的方向环境预判。&lt;br&gt;\nB：频率K的均线K线状态，决定当前的号能不能选。&lt;br&gt;\nC：遗漏K的均线K线状态。决定号码值不值得打。&lt;/p&gt;\n&lt;h2 id=\&#34;font-color00b050九帝qq1601708361font\&#34;&gt;&lt;strong&gt;&lt;font color=\&#34;#00b050\&#34;&gt;&lt;strong&gt;九帝QQ:1601708361&lt;/strong&gt;&lt;/font&gt;&lt;/strong&gt;&lt;/h2&gt;\n&lt;p&gt;&lt;em&gt;实战建议&lt;/em&gt;：&lt;br&gt;\n没有百分百的技术，分析与等待必不可少。&lt;br&gt;\n知道号码什么情况下不开，才知道如何去选择号码。&lt;br&gt;\n不要奢求一抓一大波，只做最稳的点，稳中取胜。&lt;br&gt;\n模棱两可的号和十分勉强的的号，拿捏不住就放掉。&lt;br&gt;\n侥幸心理不可取，一时的贪心会对未来造成必挂的隐患。&lt;/p&gt;\n&#34;,&#34;fileName&#34;:&#34;cai-piao-ji-zhu-jun-xian-ji-chu-fen-xiang&#34;,&#34;abstract&#34;:&#34;&#34;,&#34;title&#34;:&#34;彩票技术：均线基础分享&#34;,&#34;tags&#34;:[{&#34;name&#34;:&#34;彩票技术&#34;,&#34;slug&#34;:&#34;ELWsBxdqW&#34;,&#34;used&#34;:true,&#34;link&#34;:&#34;https://feng888777.github.io/tag/ELWsBxdqW/&#34;}],&#34;date&#34;:&#34;2024-02-29 00:24:48&#34;,&#34;dateFormat&#34;:&#34;2024-02-29&#34;,&#34;feature&#34;:&#34;&#34;,&#34;link&#34;:&#34;https://feng888777.github.io/post/cai-piao-ji-zhu-jun-xian-ji-chu-fen-xiang/&#34;,&#34;hideInList&#34;:false,&#34;isTop&#34;:false,&#34;stats&#34;:{&#34;text&#34;:&#34;8 min read&#34;,&#34;time&#34;:431000,&#34;words&#34;:2101,&#34;minutes&#34;:8},&#34;description&#34;:&#34;九帝公开分享课\n只讲均线，太干，自备白开水。\n（文章底部找我交流）\n联系方式\n彩票技术交流圈 防失联，务必添加\n九帝：\nQQ：1601708361\nskype：d9516888@outlook.com\n68chat：89gw8l8l66\n用...&#34;,&#34;toc&#34;:&#34;&lt;ul class=\&#34;markdownIt-TOC\&#34;&gt;\n&lt;li&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E4%B9%9D%E5%B8%9D%E5%85%AC%E5%BC%80%E5%88%86%E4%BA%AB%E8%AF%BE\&#34;&gt;九帝公开分享课&lt;/a&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E5%8F%AA%E8%AE%B2%E5%9D%87%E7%BA%BF%E5%A4%AA%E5%B9%B2%E8%87%AA%E5%A4%87%E7%99%BD%E5%BC%80%E6%B0%B4\&#34;&gt;只讲均线，太干，自备白开水。&lt;/a&gt;&lt;br&gt;\n*\n&lt;ul&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E4%B8%80%E4%BA%86%E8%A7%A3%E5%9D%87%E7%BA%BF%E4%B8%8E%E9%80%89%E6%8B%A9%E5%9D%87%E7%BA%BF\&#34;&gt;一：了解均线与选择均线&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E4%BA%8C%E5%9D%87%E7%BA%BF%E7%9A%84%E8%BF%90%E7%94%A8%E6%96%B9%E6%B3%95\&#34;&gt;二：均线的运用方法&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E6%A2%B3%E7%90%86%E4%B8%8E%E5%BB%BA%E8%AE%AE\&#34;&gt;梳理与建议&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#font-color00b050%E4%B9%9D%E5%B8%9Dqq1601708361font\&#34;&gt;&lt;strong&gt;&lt;font color=\&#34;#00b050\&#34;&gt;&lt;strong&gt;九帝QQ:1601708361&lt;/strong&gt;&lt;/font&gt;&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;/ul&gt;\n&#34;},{&#34;content&#34;:&#34;&lt;p&gt;技术交流，精准计划。&lt;/p&gt;\n&lt;figure data-type=\&#34;image\&#34; tabindex=\&#34;1\&#34;&gt;&lt;img src=\&#34;https://feng888777.github.io/post-images/1708965642877.png\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;/figure&gt;\n&lt;p&gt;彩票技术交流圈 防失联，务必添加&lt;/p&gt;\n&lt;p&gt;九帝：&lt;br&gt;\nQQ：1601708361&lt;br&gt;\nskype：d9516888@outlook.com&lt;br&gt;\n68chat：89gw8l8l66&lt;/p&gt;\n&lt;p&gt;用途：&lt;br&gt;\nskype：防失联与业务咨询&lt;br&gt;\n68chat：业务执行圈子技术交流群&lt;/p&gt;\n&lt;p&gt;软件下载&lt;br&gt;\nskype官网：shiguangpu.com&lt;br&gt;\n68chat官网：68chat.org&lt;/p&gt;\n&#34;,&#34;fileName&#34;:&#34;cai-piao-ji-zhu-jiao-liu-quan-zi&#34;,&#34;abstract&#34;:&#34;&#34;,&#34;title&#34;:&#34;彩票技术交流圈子&#34;,&#34;tags&#34;:[],&#34;date&#34;:&#34;2024-02-27 00:40:08&#34;,&#34;dateFormat&#34;:&#34;2024-02-27&#34;,&#34;feature&#34;:&#34;&#34;,&#34;link&#34;:&#34;https://feng888777.github.io/post/cai-piao-ji-zhu-jiao-liu-quan-zi/&#34;,&#34;hideInList&#34;:false,&#34;isTop&#34;:false,&#34;stats&#34;:{&#34;text&#34;:&#34;1 min read&#34;,&#34;time&#34;:16000,&#34;words&#34;:69,&#34;minutes&#34;:1},&#34;description&#34;:&#34;技术交流，精准计划。\n\n彩票技术交流圈 防失联，务必添加\n九帝：\nQQ：1601708361\nskype：d9516888@outlook.com\n68chat：89gw8l8l66\n用途：\nskype：防失联与业务咨询\n68chat：业务...&#34;,&#34;toc&#34;:&#34;&#34;},{&#34;content&#34;:&#34;&lt;p&gt;多彩全能彩票缩水做号软件&lt;/p&gt;\n&lt;p&gt;https://www.lanzoub.com/iZrq91ql2ctc&lt;br&gt;\n密码:4u0e&lt;/p&gt;\n&lt;p&gt;彩票技术交流圈 防失联，务必添加&lt;/p&gt;\n&lt;p&gt;九帝：&lt;br&gt;\nQQ：1601708361&lt;br&gt;\nskype：d9516888@outlook.com&lt;br&gt;\n68chat：89gw8l8l66&lt;/p&gt;\n&lt;p&gt;用途：&lt;br&gt;\nskype：防失联与业务咨询&lt;br&gt;\n68chat：业务执行圈子技术交流群&lt;/p&gt;\n&lt;p&gt;软件下载&lt;br&gt;\nskype官网：shiguangpu.com&lt;br&gt;\n68chat官网：68chat.org&lt;/p&gt;\n&#34;,&#34;fileName&#34;:&#34;cai-piao-suo-shui-zuo-hao-ruan-jian&#34;,&#34;abstract&#34;:&#34;&#34;,&#34;title&#34;:&#34;彩票缩水做号软件&#34;,&#34;tags&#34;:[{&#34;name&#34;:&#34;彩票缩水做号软件&#34;,&#34;slug&#34;:&#34;F0BcWj6Lq&#34;,&#34;used&#34;:true,&#34;link&#34;:&#34;https://feng888777.github.io/tag/F0BcWj6Lq/&#34;}],&#34;date&#34;:&#34;2024-02-27 00:39:44&#34;,&#34;dateFormat&#34;:&#34;2024-02-27&#34;,&#34;feature&#34;:&#34;&#34;,&#34;link&#34;:&#34;https://feng888777.github.io/post/cai-piao-suo-shui-zuo-hao-ruan-jian/&#34;,&#34;hideInList&#34;:false,&#34;isTop&#34;:true,&#34;stats&#34;:{&#34;text&#34;:&#34;1 min read&#34;,&#34;time&#34;:20000,&#34;words&#34;:81,&#34;minutes&#34;:1},&#34;description&#34;:&#34;多彩全能彩票缩水做号软件\nhttps://www.lanzoub.com/iZrq91ql2ctc\n密码:4u0e\n彩票技术交流圈 防失联，务必添加\n九帝：\nQQ：1601708361\nskype：d9516888@outlook.com\n...&#34;,&#34;toc&#34;:&#34;&#34;}]";
+  // var json = escape.substr(1, escape.length - 2);
+  // var datas = json.split(',');
+  // for (let i=0; i < datas.length; i++) {
+  //   let item = datas[i];
+  //   let attrs = item.split('34;:&#34')
+  //   debugger
+  //   console.log(datas[i])
+  // }
+  let escapeMap = new Map();
+  escapeMap.set('&#34;', '"');
+  escapeMap.set('&gt;', '>');
+  escapeMap.set('&#39;', "'");
+  escapeMap.set('&lt;', '<');
+  escapeMap.set('&quot;', '"');
+  escapeMap.set('&amp;', '&');
+</script> -->
+
+<canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;"></canvas>
+<script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script>
+<script type="text/javascript" src="/media/js/mouse/fireworks.js"></script>
+
+
+
+</html>
